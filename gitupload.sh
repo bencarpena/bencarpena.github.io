@@ -9,5 +9,5 @@ echo " $prefx"
 echo "=================================="
 
 git add .
-git commit -m $prex $dt
+git commit -m "$prex $dt"
 git push origin main

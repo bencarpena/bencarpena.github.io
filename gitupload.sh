@@ -1,7 +1,7 @@
 #!/bin/sh
 # @bencarpena 20210202
 
-prefx = 'GitHub pages '
+prefx = "GitHub pages ";
 dt=$(date '+%Y%m%d_%H%M%S');
 echo "=================================="
 echo "Commit tag: $dt"

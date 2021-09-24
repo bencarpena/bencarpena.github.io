@@ -12,6 +12,7 @@ self.addEventListener('install', e => {
         caches.open(cacheName).then(cache => {
             return cache.addAll([
                 '/?launch=pwa',
+                '/?utm_source=pwa',
                 '/httpdata/images/home.jpg',
                 '/httpdata/images/bench.png',
                 '/httpdata/images/icon/brightoaks.ico',

@@ -12,13 +12,13 @@ self.addEventListener('install', e => {
         caches.open(cacheName).then(cache => {
             return cache.addAll([
                 '/?launch=pwa',
-                '/images/home.jpg',
-                '/images/bench.png',
-                '/images/icon/brightoaks.ico',
-                '/images/stones.jpg',
-                '/css/base.css',
-                '/js/jquery.min.js',
-                'js/goanalytics.js'
+                '/httpdata/images/home.jpg',
+                '/httpdata/images/bench.png',
+                '/httpdata/images/icon/brightoaks.ico',
+                '/httpdata/images/stones.jpg',
+                '/httpdata/css/base.css',
+                '/httpdata/js/jquery.min.js',
+                '/httpdata/js/goanalytics.js'
             ])
                 .then(() => self.skipWaiting());
         })

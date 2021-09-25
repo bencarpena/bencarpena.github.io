@@ -1,0 +1,51 @@
+.nivoSlider {
+	POSITION: relative; DISPLAY: block; OVERFLOW: hidden
+}
+#ombre {
+	BORDER-BOTTOM: #ddd 1px; POSITION: relative; BACKGROUND: url(../images/ombre.png) no-repeat 0px 338px; HEIGHT: 400px
+}
+#ombre2 {
+	POSITION: relative; MARGIN-TOP: 40px; PADDING-LEFT: 10px; BACKGROUND: url(http://www.studiobreakfast.be/images/ombre2.png) no-repeat -1px 277px; HEIGHT: 350px; MARGIN-LEFT: -10px; OVERFLOW: hidden
+}
+.nivoSlider IMG {
+	POSITION: absolute; TOP: 0px; LEFT: 0px
+}
+.nivoSlider A.nivo-imageLink {
+	Z-INDEX: 60; BORDER-BOTTOM: 0px; POSITION: absolute; BORDER-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; WIDTH: 100%; PADDING-RIGHT: 0px; DISPLAY: none; HEIGHT: 100%; BORDER-TOP: 0px; TOP: 0px; BORDER-RIGHT: 0px; PADDING-TOP: 0px; LEFT: 0px
+}
+.nivo-slice {
+	Z-INDEX: 50; POSITION: absolute; DISPLAY: block; HEIGHT: 100%
+}
+.nivo-caption {
+	Z-INDEX: 89; POSITION: absolute; WIDTH: 100%; BOTTOM: 0px; BACKGROUND: #000; VISIBILITY: hidden; COLOR: #fff; LEFT: 0px; opacity: 0.8
+}
+.nivo-caption P {
+	PADDING-BOTTOM: 5px; MARGIN: 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.nivo-directionNav A {
+	Z-INDEX: 99; POSITION: absolute; TOP: 45%; CURSOR: pointer
+}
+.nivo-prevNav {
+	LEFT: 0px
+}
+.nivo-nextNav {
+	RIGHT: 0px
+}
+.nivo-controlNav A {
+	Z-INDEX: 100; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; TEXT-INDENT: -9999px; WIDTH: 10px; DISPLAY: block; BACKGROUND: url(http://www.studiobreakfast.be/images/bullets.png) no-repeat; FLOAT: left; HEIGHT: 10px; BORDER-TOP: 0px; MARGIN-RIGHT: 4px; BORDER-RIGHT: 0px
+}
+.nivo-controlNav A.active {
+	BACKGROUND-POSITION: -10px 0px
+}
+.nivo-controlNav {
+	Z-INDEX: 100; POSITION: absolute; TOP: 320px; LEFT: 30px
+}
+#ombre2 .nivo-controlNav {
+	POSITION: absolute; PADDING-BOTTOM: 10px; BACKGROUND-COLOR: white; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; TOP: 270px; PADDING-TOP: 10px; LEFT: 0px
+}
+#ombre2 .nivo-controlNav A {
+	Z-INDEX: 100; BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; TEXT-INDENT: -9999px; WIDTH: 10px; DISPLAY: block; BACKGROUND: url(http://www.studiobreakfast.be/images/bullets2.png) no-repeat; FLOAT: left; HEIGHT: 10px; BORDER-TOP: 0px; MARGIN-RIGHT: 4px; BORDER-RIGHT: 0px
+}
+#ombre2 .nivo-controlNav A.active {
+	BACKGROUND-POSITION: -10px 0px
+}

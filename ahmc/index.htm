@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<title>Asian Hospital and Medical Center | Medical Excellence, Compassionate Care</title>
+
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/form.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="css/thomas.css" type="text/css" media="screen" />
+ 
+<link rel="stylesheet" href="css/coda-slider-2.0.css" type="text/css" media="screen" />
+ 
+<link href="images/icons/ahmc.ico" rel="SHORTCUT ICON" type="image/x-icon" />
+
+<script src="js/cufon.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/tondo_400_tondo_700.font.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/jquery-1.4.2.min.js" type="text/javascript" charset="UTF-8"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript" charset="UTF-8"></script>
+
+ 
+ 
+	
+<script src="js/jquery.nivo.slider.pack.js" type="text/javascript" charset="UTF-8"></script>
+
+<script src="js/jquery.jcarousel.min.js" type="text/javascript" charset="UTF-8"></script>
+
+<script src="js/jquery.quicksand.min.js" type="text/javascript" charset="UTF-8"></script>
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
+Cufon.replace('h1');
+Cufon.replace('h2.blog-title');
+Cufon.replace('h2.post-title');
+Cufon.replace('h3.post-title');
+ 
+ 
+ 
+	$(function(){
+	
+			
+		
+		$("a img").fadeTo("fast", 1.81); // This sets the opacity of the thumbs to fade down to 60% when the page loads
+	
+		$("a img").hover(function(){
+			$(this).fadeTo("fast", 0.7); // This should set the opacity to 100% on hover
+		},function(){
+	   		$(this).fadeTo("fast", 1.81); // This should set the opacity back to 60% on mouseout
+		});
+		
+		
+	    
+	
+				
+			$('#slider').nivoSlider({
+				effect:'fold', //Specify sets like: 'fold,fade,sliceDown'
+				slices:12,
+				animSpeed:500,
+				pauseTime:4000,
+				startSlide:0, //Set starting Slide (0 index)
+				directionNav:false, //Next & Prev
+				directionNavHide:true, //Only show on hover
+				controlNav:true, //1,2,3...
+				controlNavThumbs:false, //Use thumbnails for Control Nav
+		      	controlNavThumbsFromRel:false, //Use image rel for thumbs
+				controlNavThumbsSearch: '.jpg', //Replace this with...
+				keyboardNav:true, //Use left & right arrows
+				pauseOnHover:true, //Stop animation while hovering
+				manualAdvance:false //Force manual transitions
+			});
+			
+			function mycarousel_initCallback(carousel) {
+		
+			    $('#prevScroll').bind('click', function() {
+			        carousel.prev();
+			        return false;
+			        aler("prev");
+			    });
+			
+			    $('#nextScroll').bind('click', function() {
+			        carousel.next();
+			        return false;
+			    });
+			};
+			
+			// Ride the carousel...
+		    $("#listeProjets").jcarousel({
+		        scroll: 4,
+		        wrap: 'circular',
+		        initCallback: mycarousel_initCallback,
+		        // This tells jCarousel NOT to autobuild prev/next buttons
+		        buttonNextHTML: null,
+		        buttonPrevHTML: null
+		    });
+			
+				
+	});
+	
+ 
+</script>
+<link rel="stylesheet" href="css/uniform.default.css" type="text/css" media="screen" charset="utf-8" />
+ 
+</head>
+ 
+<body>
+<div id="header">
+	<div class="headerContent">
+		<div class="logo">
+			<a href="http://www.asianhospital.com"><img src="images/global-ahmc.jpg" alt="Asian Hospital and Medical Center" title="Asian Hospital and Medical Center" /></a>
+		</div>
+		
+		<ul id="nav">
+								
+					<!-- <li class="current_page_item"><a href="http://www.asianhospital.com">Home</a></li>	-->
+					<li ><a href="http://www.asianhospital.com">Services</a></li>	
+					<li ><a href="#">Doctors</a></li>
+					<li ><a href="#">Search</a></li>
+					<li ><a href="#">Contact</a></li>
+					<li ><a href="#">About</a></li>
+					
+		</ul>
+						
+  	</div>
+</div>
+<div id="container">
+<div id="single-wrapper" class="pAccueil">
+	
+		
+		<div id="banner-home">
+			<div id="ombre">
+                <div id="slider">
+                    <img title="home" src="images/banner-hote-hosp.jpg" alt="Hotel or Hospital? Both." title="Hotel or Hospital? Both." width="960" />
+                    <img title="home" src="images/banner-carrefour.jpg" alt="" width="960" />
+                    <img title="home" src="images/home-kine.png" alt="" width="960" />
+                    <img title="home" src="images/banner-riveo.jpg" alt="" width="960" />
+                    <img title="home" src="images/home-francos.jpg" alt="" width="960" />
+                    <img title="home" src="images/banner-eatwell.jpg" alt="" width="960" />
+                  
+                 </div>
+             </div>
+		</div>
+		
+		
+	<div id="scrollJobs">
+		<div class="scrollHead">
+			<h2>Featured reads</h2>
+			<ul class="navScroll">
+				<li class="scrollPrev"><a href="#" id="prevScroll">Prev</a></li>
+				<li class="scrollNext"><a href="#" id="nextScroll">Next</a></li>
+			</ul>
+		</div>
+			
+		<ul class="projets" id="listeProjets">
+				
+			<li class="grid-item firstItem" id="post-2029">
+					            <div class="grid-image"><a href="#" title="Sleep Laboratory" alt="Sleep Laboratory"><img src="images/ct-sleeplab.jpg" alt="Sleep Laboratory" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="#" rel="bookmark" title="Sleep Laboratory" alt="Sleep Laboratory">Sleep Laboratory</a></h3>
+				<p class="post-meta">
+					<p>Snoring is no joke! </p>
+				</p>
+							</li>
+						
+			<li class="grid-item " id="post-902">
+					            <div class="grid-image"><a href="#" title="Pediatrics" alt="Pediatrics" ><img src="images/ct-childapple.jpg" title="Pediatrics" alt="Pediatrics" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="#" title="Pediatrics" alt="Pediatrics" rel="bookmark">Pediatrics</a></h3>
+				<p class="post-meta">
+					<p>Kids can tell</p>
+				</p>
+							</li>
+						
+			<li class="grid-item " id="post-1148">
+					            <div class="grid-image"><a href="#"><img src="images/1148.jpg" alt="Riveo thumbnail image" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="http#" rel="bookmark">Riveo</a></h3>
+				<p class="post-meta">
+					<p>La nature au fil de l&#8217;eau</p>
+				</p>
+							</li>
+						
+			<li class="grid-item " id="post-445">
+					            <div class="grid-image"><a href="#" alt="Minimally Invasive Surgery" title="Minimally Invasive Surgery"><img src="images/ct-mis.jpg" alt="Minimally Invasive Surgery" title="Minimally Invasive Surgery" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="#" alt="Minimally Invasive Surgery" title="Minimally Invasive Surgery" rel="bookmark">Minimally Invasive Surgery</a></h3>
+				<p class="post-meta">
+					<p>Surgery minus the scars</p>
+				</p>
+							</li>
+						
+			<li class="grid-item firstItem" id="post-1031">
+					            <div class="grid-image"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/voisin-immo/"><img src="images/1031.png" alt="Voisin&nbsp;Immo thumbnail image" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/voisin-immo/" rel="bookmark">Voisin&nbsp;Immo</a></h3>
+				<p class="post-meta">
+					<p>Bureau immobilier</p>
+				</p>
+							</li>
+						
+			<li class="grid-item " id="post-894">
+					            <div class="grid-image"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/myeatwell/"><img src="images/894.jpg" alt="MyEatWell thumbnail image" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/myeatwell/" rel="bookmark">MyEatWell</a></h3>
+				<p class="post-meta">
+					<p>Le régime qui garde le sourire</p>
+				</p>
+							</li>
+						
+			<li class="grid-item " id="post-1909">
+					            <div class="grid-image"><a href="http://www.studiobreakfast.be/portfolio/secteurs/culture/durbuyssimo-2/"><img src="images/1909.png" alt="Durbuyssimo thumbnail image" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="http://www.studiobreakfast.be/portfolio/secteurs/culture/durbuyssimo-2/" rel="bookmark">Durbuyssimo</a></h3>
+				<p class="post-meta">
+					<p>Festival classique de Durbuy</p>
+				</p>
+							</li>
+						
+			<li class="grid-item " id="post-837">
+					            <div class="grid-image"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/az-print/"><img src="images/837.jpg" alt="AZ&nbsp;Print thumbnail image" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/az-print/" rel="bookmark">AZ&nbsp;Print</a></h3>
+				<p class="post-meta">
+					<p>Imprime, imprime, imprime&#8230;</p>
+				</p>
+							</li>
+						
+			<li class="grid-item firstItem" id="post-1733">
+					            <div class="grid-image"><a href="http://www.studiobreakfast.be/portfolio/secteurs/tourisme/sanglier-des-ardennes/"><img src="images/1733.jpg" alt="Sanglier des&nbsp;Ardennes thumbnail image" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="http://www.studiobreakfast.be/portfolio/secteurs/tourisme/sanglier-des-ardennes/" rel="bookmark">Sanglier des&nbsp;Ardennes</a></h3>
+				<p class="post-meta">
+					<p>Hostellerie **** à Durbuy</p>
+				</p>
+							</li>
+						
+			<li class="grid-item " id="post-830">
+					            <div class="grid-image"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/deleforterie/"><img src="images/830.jpg" alt="Deleforterie thumbnail image" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/deleforterie/" rel="bookmark">Deleforterie</a></h3>
+				<p class="post-meta">
+					<p>Cuisines contemporaines</p>
+				</p>
+							</li>
+						
+			<li class="grid-item " id="post-746">
+					            <div class="grid-image"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/orane-enora/"><img src="images/746.png" alt="Orane &#038;&nbsp;Enora thumbnail image" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/orane-enora/" rel="bookmark">Orane &#038;&nbsp;Enora</a></h3>
+				<p class="post-meta">
+					<p>Créatrice de mode</p>
+				</p>
+							</li>
+						
+			<li class="grid-item " id="post-739">
+					            <div class="grid-image"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/mjn/"><img src="images/739.jpg" alt="MJN thumbnail image" width="220px" height="162" /></a></div>
+	        		        	
+	            <h3 class="post-title"><a href="http://www.studiobreakfast.be/portfolio/secteurs/entreprise/mjn/" rel="bookmark">MJN</a></h3>
+				<p class="post-meta">
+					<p>Lofts et espaces</p>
+				</p>
+							</li>
+					
+		</ul>
+	
+	</div>
+	
+</div>
+<div id="footer">
+	<div class="widget">
+		<h3>Accommodations &mdash;</h3>
+		<p>Bld de la Constitution 73 - 4020 LIEGE<br />
+		Tel.: +32 (0)4 342 86 17<br />
+		<a href="mailto:hello@studiobreakfast.be">Mail</a>.</p>
+	</div>
+	<div class="widget">
+		<h3>Quick Links &mdash;</h3>
+		<ul>
+		    <li>Looking for a doctor? <a href="#" alt="Find a Doctor" title="Find a Doctor" target="_blank">Browse here</a></li>
+			<li>Follow us on <a href="http://www.twitter.com/asianhospital" target="_blank" alt="AHMC Twitter" title="AHMC Twitter">Twitter</a></li>
+			<li>News and updates at our <a href="#" target="_blank" alt="Pressroom" title="Pressroom">Pressroom</a></li>
+		</ul>
+	</div>
+	<div class="widget">
+		<h3>Online Services &mdash;</h3>
+		<ul>
+		    <li>Pre-Admission System <a href="#" alt="Pre-Admission System" title="Pre-Admission System" target="_blank">Register here</a></li>
+			<li>Show you care, <a href="#" target="_blank" alt="Asian Hospital eCards" title="Asian Hospital eCards">Send an eCard</a></li>
+			<li>Talk to us - <a href="#" target="_blank" alt="Online Directory" title="Online Directory">Online directory</a></li>
+		</ul>
+	</div>
+	<div class="widget">
+		<h3>Sitemap &mdash;</h3>
+		<p>Browse related links</p>
+	</div>
+</div>
+ 
+
+</body>
+</html>

@@ -1,0 +1,150 @@
+#brand H1 A {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; TEXT-INDENT: -8000px; DISPLAY: block; BACKGROUND-REPEAT: no-repeat; BACKGROUND-POSITION: 0px 8px; HEIGHT: 45px; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#brand H1 A:hover {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+#greet .header {
+	POSITION: absolute; TOP: 90px; LEFT: 0px
+}
+#greet DIV.inner {
+	BACKGROUND: url(/assets/i/fg-trans.png) no-repeat 50% 0px; HEIGHT: 252px; opacity: 0
+}
+#greet H2 {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 36px/44px Cambria, Georgia, serif; COLOR: black; PADDING-TOP: 0px
+}
+#greet {
+	BACKGROUND: url(/assets/i/bg-ards.png) repeat-x 50% 0px; HEIGHT: 252px; BORDER-TOP: #edf3f5 1px solid; opacity: 0
+}
+#map_canvas {
+	BACKGROUND-COLOR: #eee; MARGIN: 18px 0px; WIDTH: 948px; HEIGHT: 153px
+}
+#message P {
+	MARGIN: 0px 0px 16px; COLOR: #5b9eb0
+}
+#message {
+	-moz-border-radius: 3px; -webkit-border-radius: 3px
+}
+ADDRESS {
+	-moz-border-radius: 3px; -webkit-border-radius: 3px
+}
+#letter {
+	POSITION: relative; PADDING-BOTTOM: 23px; MIN-HEIGHT: 60px; PADDING-LEFT: 10px; WIDTH: 420px; PADDING-RIGHT: 10px; FONT: italic 14px/18px "Cambria", "Georgia", "Times New Roman", serif; BACKGROUND: white; MARGIN-LEFT: -10px; TOP: 0px; PADDING-TOP: 20px
+}
+#message {
+	POSITION: absolute; PADDING-BOTTOM: 20px; PADDING-LEFT: 20px; WIDTH: 440px; PADDING-RIGHT: 0px; FONT: italic 14px/18px "Cambria", "Georgia", "Times New Roman", serif; BACKGROUND: url(http://www.studiobreakfast.be/images/ombre3.png) no-repeat center bottom; FLOAT: right; TOP: 0px; PADDING-TOP: 20px; LEFT: 500px
+}
+#pitch .inner {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+#pitch BLOCKQUOTE P {
+	MARGIN: 0px; COLOR: #974472
+}
+#pitch P IMG {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FLOAT: left; PADDING-TOP: 6px
+}
+#pitch P {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 440px; PADDING-RIGHT: 0px; COLOR: #333; PADDING-TOP: 0px
+}
+#pitch {
+	FONT: 14px/18px Georgia, "Times New Roman", Times, serif; COLOR: #333
+}
+#tasks TABLE TD {
+	WIDTH: 30px
+}
+#tasks TABLE TH {
+	WIDTH: 210px
+}
+.footer P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.footer {
+	PADDING-BOTTOM: 0px; MARGIN: 72px 0px 36px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT: 11px/15px Lucida Grande, Lucida Sans, Lucida, Verdana, sans-serif; PADDING-TOP: 0px
+}
+.inner {
+	POSITION: relative; MARGIN: 0px auto; WIDTH: 440px; FLOAT: left
+}
+#brand {
+	OVERFLOW: hidden
+}
+.section {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 0px 10px; PADDING-LEFT: 0px; WIDTH: 480px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+INPUT.mysubmit {
+	MARGIN: 18px 0px; DISPLAY: none
+}
+.submit {
+	MARGIN: 54px 0px; DISPLAY: none
+}
+.testimonial {
+	MARGIN: 9px 0px 36px; FONT: 11px/15px Lucida Grande, Lucida Sans, Lucida, Verdana, sans-serif
+}
+.warn {
+	PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-LEFT: 12px; PADDING-RIGHT: 0px; DISPLAY: none; FONT: italic 10px/10px "Cambria", "Georgia", "Times New Roman", serif; COLOR: #c00; PADDING-TOP: 2px
+}
+#warn_phn {
+	DISPLAY: none
+}
+#warn_eml {
+	DISPLAY: none
+}
+ACRONYM {
+	TEXT-TRANSFORM: uppercase; FONT-VARIANT: small-caps
+}
+ABBR {
+	TEXT-TRANSFORM: uppercase; FONT-VARIANT: small-caps
+}
+ADDRESS {
+	FONT-STYLE: normal
+}
+FORM H3 {
+	TEXT-TRANSFORM: uppercase; MARGIN: 0px; FONT: bold 11px/15px Lucida Grande, Lucida Sans, Lucida, Verdana
+}
+FORM INPUT {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 228px; PADDING-RIGHT: 0px; FONT: 14px/18px "Cambria", "Georgia", "Times New Roman", serif; PADDING-TOP: 0px
+}
+FORM INPUT[type='checkbox'] {
+	MARGIN: 3px 3px 3px 4px; WIDTH: 30px; DISPLAY: block
+}
+FORM LABEL {
+	FONT-STYLE: italic; FONT-SIZE: 12px
+}
+FORM P {
+	LINE-HEIGHT: 16px; FONT-STYLE: normal; MARGIN: 0px 0px 15px; WIDTH: 440px; FONT-SIZE: 12px
+}
+FORM TABLE LABEL {
+	PADDING-BOTTOM: 4px; LINE-HEIGHT: 16px; FONT-STYLE: italic; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; FONT-SIZE: 12px; PADDING-TOP: 0px
+}
+FORM TABLE TBODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM TABLE TD {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 0px; WIDTH: 228px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: bottom; PADDING-TOP: 2px
+}
+FORM TABLE TD + TD {
+	WIDTH: 120px; VERTICAL-ALIGN: middle
+}
+FORM TABLE TH {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; WIDTH: 120px; PADDING-RIGHT: 0px; VERTICAL-ALIGN: bottom; FONT-WEIGHT: normal; PADDING-TOP: 0px
+}
+FORM TEXTAREA {
+	MARGIN: 15px 0px 0px; WIDTH: 330px; FONT: 14px/18px "Cambria", "Georgia", "Times New Roman", serif; HEIGHT: 150px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px 0px 64px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; DISPLAY: block; FONT: italic 14px/18px "Cambria", "Georgia", "Times New Roman", serif; PADDING-TOP: 0px
+}
+SMALL {
+	
+}
+SPAN.logo {
+	POSITION: absolute; WIDTH: 32px; DISPLAY: block; BACKGROUND: url(/assets/i/sprite.gif) #fff no-repeat 0px -180px; HEIGHT: 18px; TOP: 126px; LEFT: 399px
+}
+#errorExplanation H2 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 20px; MARGIN: 0px 0px 16px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; FONT-SIZE: 16px; PADDING-TOP: 0px
+}
+#errorExplanation {
+	BORDER-BOTTOM: red 3px solid; BORDER-LEFT: red 3px solid; PADDING-BOTTOM: 16px; MARGIN: 16px; PADDING-LEFT: 16px; PADDING-RIGHT: 16px; BORDER-TOP: red 3px solid; BORDER-RIGHT: red 3px solid; PADDING-TOP: 16px
+}
+#formulaire {
+	WIDTH: 720px
+}

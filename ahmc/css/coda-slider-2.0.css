@@ -1,0 +1,72 @@
+.coda-slider-wrapper {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.coda-slider {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.coda-slider-no-js .coda-slider {
+	PADDING-RIGHT: 20px; HEIGHT: 200px; OVERFLOW: auto !important
+}
+.coda-slider {
+	WIDTH: 720px
+}
+.coda-slider .panel {
+	WIDTH: 720px
+}
+.arrows.coda-slider-wrapper .coda-slider {
+	WIDTH: 720px
+}
+.arrows.coda-slider-wrapper .coda-slider .panel {
+	WIDTH: 720px
+}
+.arrows.coda-slider-wrapper .coda-slider {
+	MARGIN: 0px
+}
+.coda-nav-left A {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; WIDTH: 100px; PADDING-RIGHT: 5px; BACKGROUND: #000; COLOR: #fff; PADDING-TOP: 5px
+}
+.coda-nav-right A {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; WIDTH: 100px; PADDING-RIGHT: 5px; BACKGROUND: #000; COLOR: #fff; PADDING-TOP: 5px
+}
+.coda-nav UL LI A.current {
+	BACKGROUND: #39c
+}
+.coda-slider .panel-wrapper {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.coda-slider P.loading {
+	TEXT-ALIGN: center; PADDING-BOTTOM: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; PADDING-TOP: 20px
+}
+.coda-nav UL {
+	MARGIN: auto; DISPLAY: block; CLEAR: both; OVERFLOW: hidden
+}
+.coda-nav UL LI {
+	DISPLAY: inline
+}
+.coda-nav UL LI A {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; DISPLAY: block; BACKGROUND: #000; FLOAT: left; COLOR: #fff; MARGIN-RIGHT: 1px; TEXT-DECORATION: none; PADDING-TOP: 3px
+}
+.coda-slider-wrapper {
+	CLEAR: both; OVERFLOW: auto
+}
+.coda-slider {
+	POSITION: relative; FLOAT: left; OVERFLOW: hidden
+}
+.coda-slider .panel {
+	DISPLAY: block; FLOAT: left
+}
+.coda-slider .panel-container {
+	POSITION: relative
+}
+.coda-nav-left {
+	FLOAT: left
+}
+.coda-nav-right {
+	FLOAT: left
+}
+.coda-nav-left A {
+	TEXT-ALIGN: center; DISPLAY: block; TEXT-DECORATION: none
+}
+.coda-nav-right A {
+	TEXT-ALIGN: center; DISPLAY: block; TEXT-DECORATION: none
+}

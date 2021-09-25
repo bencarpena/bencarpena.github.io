@@ -1,5 +1,5 @@
 ﻿/*
- * Hashes by BC
+ * BC by BC
  * further reading: https://github.com/bencarpena/shared
  * email: benjcarpena@gmail.com
  * 

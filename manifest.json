@@ -15,7 +15,7 @@
     }
   ],
   "start_url": "/?launch=grit8",
-  "scope": "/",
+  "scope": ".",
   "theme_color": "#FF6B6B",
   "background_color": "#FF6B6B",
   "display": "standalone"

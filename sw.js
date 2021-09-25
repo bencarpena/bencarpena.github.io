@@ -4,7 +4,7 @@
  * email: benjcarpena@gmail.com
  * 
  */
-const version = "1.1.23";
+const version = "7.10.1856";
 const cacheName = 'bcgrit-${version}';
 self.addEventListener('install', e => {
     const timeStamp = Date.now();

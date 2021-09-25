@@ -1,6 +1,6 @@
 {
   "name": "BC by BC",
-  "short_name": "grit8",
+  "short_name": "BC |",
   "prefer_related_applications": true,
   "icons": [
     {
@@ -16,8 +16,8 @@
   ],
   "start_url": "/?launch=grit8",
   "scope": "/",
-  "theme_color": "#FF6B6B",
-  "background_color": "#FF6B6B",
+  "theme_color": "#69BB39",
+  "background_color": "#69BB39",
   "display": "standalone"
 
 }

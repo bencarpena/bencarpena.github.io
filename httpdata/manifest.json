@@ -14,8 +14,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/?launch=grit8",
-  "scope": "/",
+  "start_url": "../?launch=grit8",
+  "scope": "../",
   "theme_color": "#FF6B6B",
   "background_color": "#FF6B6B",
   "display": "standalone"

@@ -5,7 +5,7 @@
  * 
  */
 const version = "1.1.23";
-const cacheName = 'hashes-${version}';
+const cacheName = 'bcgrit-${version}';
 self.addEventListener('install', e => {
     const timeStamp = Date.now();
     e.waitUntil(

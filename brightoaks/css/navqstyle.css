@@ -1,0 +1,31 @@
+BODY {
+	FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND: #000; FONT-SIZE: 12px
+}
+UL {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+LI {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+.menu_head {
+
+	BORDER-BOTTOM: #998675 1px solid; 
+	BORDER-LEFT: #998675 1px solid; 
+	BORDER-TOP: #998675 1px solid; BORDER-RIGHT: #998675 1px solid
+
+}
+.menu_body {
+	BORDER-BOTTOM: #998675 1px solid; BORDER-LEFT: #998675 1px solid; WIDTH: 184px; DISPLAY: none; BORDER-RIGHT: #998675 1px solid
+}
+.menu_body LI {
+	BACKGROUND: #000000;
+}
+.menu_body LI.alt {
+	BACKGROUND: #000000;
+}
+.menu_body LI A {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; DISPLAY: block; COLOR: #ffffff; TEXT-DECORATION: none; PADDING-TOP: 10px
+}
+.menu_body LI A:hover {
+	PADDING-BOTTOM: 15px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT-WEIGHT: bold; PADDING-TOP: 15px
+}

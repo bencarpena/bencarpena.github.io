@@ -12,6 +12,8 @@ self.addEventListener('install', e => {
         caches.open(cacheName).then(cache => {
             return cache.addAll([
                 '/?launch=pwa',
+                '/?launch=grit8',
+                '/?launch=justreadtheinstructions',
                 '/?utm_source=pwa',
                 '/httpdata/images/home.jpg',
                 '/httpdata/images/bench.png',

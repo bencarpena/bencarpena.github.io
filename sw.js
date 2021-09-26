@@ -18,8 +18,11 @@ self.addEventListener('install', e => {
                 '/?utm_source=pwa',
                 '/httpdata/images/home.jpg',
                 '/httpdata/images/bench.png',
+                '/httpdata/images/logo-bc.png',
+                '/httpdata/images/splash.jpg',
                 '/httpdata/images/icon/brightoaks.ico',
                 '/httpdata/css/base.css',
+                '/httpdata/css/baser.css',
                 '/httpdata/js/jquery.min.js',
                 '/httpdata/js/goanalytics.js'
             ])

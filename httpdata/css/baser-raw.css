@@ -206,6 +206,13 @@ li#f-winter {
 		letter-spacing:0.091em;
 		font-family: Arial, sans-serif, Helvetica, sans-serif;
 	}
+	#page {
+		display: none;
+	}
+	#splash
+	{
+		display: none;
+	}
 	.me-job {
 		font-size: 18px;
 		font-weight: normal;

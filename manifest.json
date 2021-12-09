@@ -1,0 +1,23 @@
+{
+  "name": "BC by BC",
+  "short_name": "BC |",
+  "prefer_related_applications": true,
+  "icons": [
+    {
+      "src": "./bc-beacon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./bc-beacon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?launch=grit8",
+  "scope": "/",
+  "theme_color": "#69BB39",
+  "background_color": "#69BB39",
+  "display": "standalone"
+
+}

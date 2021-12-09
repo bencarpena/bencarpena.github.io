@@ -1,0 +1,6 @@
+.wppt_float_left {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; PADDING-BOTTOM: 3px; MARGIN: 0px 1.5em 0.5em 0px; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FLOAT: left; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; PADDING-TOP: 3px
+}
+.wppt_float_right {
+	BORDER-BOTTOM: #ddd 1px solid; BORDER-LEFT: #ddd 1px solid; PADDING-BOTTOM: 3px; MARGIN: 0px 0px 0.5em 1.5em; PADDING-LEFT: 3px; PADDING-RIGHT: 3px; FLOAT: right; BORDER-TOP: #ddd 1px solid; BORDER-RIGHT: #ddd 1px solid; PADDING-TOP: 3px
+}

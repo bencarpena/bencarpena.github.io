@@ -1,0 +1,264 @@
+BODY {
+	LINE-HEIGHT: 1.8; FONT-FAMILY: Times New Roman, Georgia, "Helvetica Neue Light", Helvetica, Georgia, Arial, Verdana, sans-serif; FONT-SIZE: 13px; FONT-WEIGHT: normal
+}
+HTML {
+	HEIGHT: 102%
+}
+#mainHolder {
+	POSITION: absolute; TEXT-ALIGN: left; MARGIN: auto; WIDTH: 950px; RIGHT: 0px; LEFT: 0px
+}
+#mainHolderp {
+	POSITION: absolute; TEXT-ALIGN: left; MARGIN: auto; WIDTH: 950px; RIGHT: 0px; LEFT: 0px
+}
+.aboutobj {
+	POSITION: absolute; PADDING-BOTTOM: 20px; WIDTH: 700px; TOP: 128px; LEFT: 188px
+}
+#button {
+	POSITION: absolute; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-LEFT: 0px; 
+	WIDTH: 12em; 
+	PADDING-RIGHT: 0px; 
+	FONT-FAMILY: Georgia, Times New Roman, "Lucida Grande", Verdana, Arial, sans-serif; 
+	COLOR: #34331f; FONT-SIZE: 14px; 
+	TOP: 145px; 
+	PADDING-TOP: 0px
+}
+#button UL {
+	BORDER-BOTTOM: medium none; 
+	BORDER-LEFT: medium none; 
+	PADDING-BOTTOM: 0px; 
+	LIST-STYLE-TYPE: none; 
+	MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; 
+	BORDER-TOP: medium none; 
+	LIST-STYLE-IMAGE: none; 
+	BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+#button LI {
+	BORDER-BOTTOM: #e5e5e5 1px solid; LIST-STYLE-TYPE: none; MARGIN: 0px; LIST-STYLE-IMAGE: none
+}
+#button LI A {
+	PADDING-BOTTOM: 5px; 
+	PADDING-LEFT: 0.5em; 
+	PADDING-RIGHT: 5px; DISPLAY: block; 
+	COLOR: #fff; 
+	TEXT-DECORATION: none; PADDING-TOP: 5px
+}
+
+#button #current 
+ 	{
+		COLOR: #f4b518; FONT-WEIGHT: bold;
+		background-color: #3E97D1;
+	}
+
+HTML > BODY #button LI A {
+	WIDTH: auto
+}
+#button LI A:hover {
+	COLOR: #f4b518; FONT-WEIGHT: bold
+}
+#div-home {
+	POSITION: absolute; TEXT-ALIGN: center; 
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 5px; 
+	WIDTH: 700px; PADDING-RIGHT: 5px; 
+	
+	DISPLAY: none; FONT-FAMILY: Times New Roman, Georgia, Arial, "Lucida Grande", Verdana, Arial, sans-serif; 
+	BACKGROUND: #fff; HEIGHT: 388px; FONT-SIZE: 12px; TOP: 120px; PADDING-TOP: 5px; LEFT: 188px; 
+	
+}
+#div-home SPAN#mainmsg {
+	POSITION: absolute; TEXT-ALIGN: left; WIDTH: 400px; DISPLAY: none; COLOR: #fff; FONT-SIZE: 16px; TOP: 160px; LEFT: 384px
+}
+#div-home H1 {
+	POSITION: absolute; TEXT-ALIGN: left; WIDTH: 400px; DISPLAY: none; LETTER-SPACING: 0.11em; COLOR: #fff; FONT-SIZE: 20px; TOP: 80px; FONT-WEIGHT: normal; LEFT: 55px
+}
+#div-contact {
+	POSITION: absolute; TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 2.1; PADDING-LEFT: 0px; WIDTH: 700px; PADDING-RIGHT: 0px; DISPLAY: none; BACKGROUND: #fff; HEIGHT: 400px; TOP: 135px; PADDING-TOP: 0px; LEFT: 188px
+}
+#div-contact SPAN#contact {
+	Z-INDEX: 1; POSITION: absolute; TEXT-ALIGN: left; WIDTH: 300px; DISPLAY: none; FONT-FAMILY: Georgia, Times New Roman, Arial, "Lucida Grande", Verdana, Arial, sans-serif; FONT-SIZE: 14px; TOP: 80px; FONT-WEIGHT: normal; LEFT: 88px; font-color: #34331F
+}
+#div-contact IMG {
+	Z-INDEX: 0; POSITION: absolute; TEXT-ALIGN: left; DISPLAY: none; TOP: 0px; LEFT: 10px
+}
+#div-contact A {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+#div-contact A:visited {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+#div-contact A:hover {
+	COLOR: #f4b518; TEXT-DECORATION: underline
+}
+#div-about01 {
+	POSITION: absolute; TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 2.1; PADDING-LEFT: 0px; WIDTH: 700px; PADDING-RIGHT: 0px; DISPLAY: none; FONT-FAMILY: Times New Roman, Georgia, Arial, "Lucida Grande", Verdana, Arial, sans-serif; BACKGROUND: #fff; HEIGHT: 400px; FONT-SIZE: 14px; TOP: 120px; PADDING-TOP: 0px; LEFT: 188px; font-color: #34331F
+}
+#div-about01 SPAN#about01 {
+	POSITION: absolute; TEXT-ALIGN: left; WIDTH: 250px; DISPLAY: none; HEIGHT: 400px; TOP: 1px; BORDER-RIGHT: #e5e5e5 1px solid; LEFT: 44px
+}
+#div-about01 SPAN#about01c {
+	POSITION: absolute; TEXT-ALIGN: left; WIDTH: 250px; DISPLAY: none; HEIGHT: 400px; TOP: 1px; BORDER-RIGHT: #e5e5e5 1px solid; LEFT: 44px
+}
+#div-about01 IMG {
+	POSITION: absolute; TEXT-ALIGN: left; DISPLAY: none; TOP: 0px; CURSOR: pointer; LEFT: 428px
+}
+#div-about01 A {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+#div-about01 A:visited {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+#div-about01 A:hover {
+	COLOR: #f4b518; TEXT-DECORATION: underline
+}
+#div-about01 H3 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 50px; FONT-STYLE: italic; MARGIN: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; FONT-FAMILY: Times New Roman, Georgia, serif; COLOR: #4d4d4d; FONT-SIZE: 35px; FONT-WEIGHT: normal; PADDING-TOP: 15px
+}
+#div-about01 H4 {
+	BORDER-BOTTOM: #e5e5e5 1px solid; POSITION: absolute; PADDING-BOTTOM: 5px; LINE-HEIGHT: 1.6; PADDING-LEFT: 0px; WIDTH: 230px; PADDING-RIGHT: 0px; FONT-FAMILY: Georgia, Times, serif; COLOR: #999; FONT-SIZE: 15px; FONT-WEIGHT: normal; PADDING-TOP: 45px; LEFT: 280px
+}
+#div-about0e {
+	POSITION: absolute; TEXT-ALIGN: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 2.1; PADDING-LEFT: 0px; WIDTH: 700px; PADDING-RIGHT: 0px; DISPLAY: none; FONT-FAMILY: Times New Roman, Georgia, Arial, "Lucida Grande", Verdana, Arial, sans-serif; BACKGROUND: #fff; HEIGHT: 400px; FONT-SIZE: 14px; TOP: 90px; PADDING-TOP: 0px; LEFT: 188px; font-color: #34331F
+}
+#div-about0e SPAN#about0e {
+	POSITION: absolute; TEXT-ALIGN: left; WIDTH: 250px; DISPLAY: none; HEIGHT: 400px; TOP: 1px; BORDER-RIGHT: #e5e5e5 1px solid; LEFT: 20px
+}
+#div-about0e SPAN#about0ec {
+	POSITION: absolute; TEXT-ALIGN: left; WIDTH: 250px; DISPLAY: none; HEIGHT: 500px; TOP: 1px; BORDER-RIGHT: #e5e5e5 1px solid; LEFT: 20px
+}
+#div-about0e IMG {
+	POSITION: absolute; TEXT-ALIGN: left; DISPLAY: none; TOP: 0px; CURSOR: pointer; LEFT: 428px
+}
+#div-about0e A {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+#div-about0e A:visited {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+#div-about0e A:hover {
+	COLOR: #f4b518; TEXT-DECORATION: underline
+}
+#div-about0e H3 {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 50px; FONT-STYLE: italic; MARGIN: 0px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; FONT-FAMILY: Times New Roman, Georgia, serif; COLOR: #4d4d4d; FONT-SIZE: 35px; FONT-WEIGHT: normal; PADDING-TOP: 40px
+}
+#div-about0e H4 {
+	BORDER-BOTTOM: #e5e5e5 1px solid; POSITION: absolute; PADDING-BOTTOM: 5px; LINE-HEIGHT: 1.6; PADDING-LEFT: 0px; WIDTH: 230px; PADDING-RIGHT: 0px; FONT-FAMILY: Georgia, Times, serif; COLOR: #999; FONT-SIZE: 15px; FONT-WEIGHT: normal; PADDING-TOP: 45px; LEFT: 280px
+}
+#logo {
+	POSITION: absolute; MARGIN: auto; TOP: 10px; LEFT: -10px;
+	BACKGROUND-IMAGE: url(bg-ball.jpg);
+	 width: 100%; 
+	 
+}
+#header {
+	POSITION: relative; WIDTH: 80px; HEIGHT: 49px; TOP: 130px; LEFT: 150px
+}
+#header UL {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: medium none; LIST-STYLE-IMAGE: none; BORDER-RIGHT: medium none; PADDING-TOP: 0px
+}
+#header LI {
+	BORDER-BOTTOM: #dee78c 1px solid; LIST-STYLE-TYPE: none; MARGIN: 0px; LIST-STYLE-IMAGE: none
+}
+#header A:hover {
+	COLOR: #f4b518; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+* {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	MARGIN: 10px 10px 0px; FONT: bold 14pt Arial, sans-serif; LETTER-SPACING: -1px; COLOR: #fff
+}
+.boxgrid {
+	BORDER-BOTTOM: #8399af 2px solid; POSITION: relative; BORDER-LEFT: #8399af 2px solid; MARGIN: 10px; WIDTH: 345px; BACKGROUND: #161613; FLOAT: left; HEIGHT: 145px; OVERFLOW: hidden; BORDER-TOP: #8399af 2px solid; TOP: 120px; BORDER-RIGHT: #8399af 2px solid; LEFT: 188px
+}
+.boxgrid SPAN#spbright {
+	POSITION: relative; PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; FONT: 18pt Garamond, Georgia, sans-serif; COLOR: #fff; PADDING-TOP: 0px
+}
+.boxgrid A#brighta {
+	POSITION: relative; PADDING-BOTTOM: 0px; PADDING-LEFT: 15px; PADDING-RIGHT: 15px; FONT: 10pt Arial, Verdana, sans-serif; COLOR: #f4b518; PADDING-TOP: 0px
+}
+.boxgrid A:link {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+.boxgrid A:visited {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+.boxgrid A:hover {
+	COLOR: #f4b518; TEXT-DECORATION: underline
+}
+.boxgrid IMG {
+	BORDER-BOTTOM: 0px; POSITION: absolute; BORDER-LEFT: 0px; BORDER-TOP: 0px; TOP: 0px; BORDER-RIGHT: 0px; LEFT: 0px
+}
+.boxgrid P {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; FONT: 10pt "Lucida Grande", Arial, sans-serif; COLOR: #afafaf; PADDING-TOP: 0px
+}
+.boxgrid P#future {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; FONT: 12pt Arial, "Lucida Grande", Arial, sans-serif; COLOR: #fff; PADDING-TOP: 0px
+}
+.boxcaption {
+	POSITION: absolute; FILTER: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); WIDTH: 100%; BACKGROUND: #000; FLOAT: left; HEIGHT: 65px; opacity: .8
+}
+.solutions SPAN.spsol {
+	BACKGROUND-IMAGE: url(about-solutions-1.jpg); POSITION: relative; WIDTH: 345px; HEIGHT: 145px
+}
+.captionfull .boxcaption {
+	TOP: 125px; LEFT: 0px
+}
+.caption .boxcaption {
+	TOP: 125px; LEFT: 0px
+}
+.boxcaptionf {
+	TOP: 0px; LEFT: 0px
+}
+A IMG {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+A:link {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #7aa333; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+A.nav:hover {
+	COLOR: #7aa333; TEXT-DECORATION: none
+}
+P {
+	MARGIN-TOP: 0px
+}
+P.caption {
+	COLOR: #000000; PADDING-TOP: 8px
+}
+A.gray {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+A.gray:hover {
+	COLOR: #f4b518; TEXT-DECORATION: none
+}
+.gray {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+
+#bfoot {
+	POSITION: absolute; 
+	TEXT-ALIGN: right; 
+	PADDING-BOTTOM: 1px; 
+	PADDING-LEFT: 5px; 
+	PADDING-RIGHT: 5px; 
+	PADDING-TOP: 5px; 	
+
+	FONT-FAMILY: Arial, Verdana, "Lucida Grande", sans-serif; 
+	FONT-SIZE: 12px; 
+	COLOR: #f4b518;
+	
+	width: 700px;
+	TOP: 520px; 
+	LEFT: 0px; 
+
+	DISPLAY: none; 
+}

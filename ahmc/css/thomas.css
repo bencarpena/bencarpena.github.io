@@ -1,0 +1,57 @@
+#scrollJobs {
+	OVERFLOW: hidden
+}
+DIV#scrollJobs .navScroll LI.scrollPrev {
+	PADDING-RIGHT: 4px; MARGIN-RIGHT: 4px; BORDER-RIGHT: #c4c4c4 1px solid
+}
+.scrollHead {
+	OVERFLOW: hidden
+}
+#jobInRel {
+	WIDTH: 720px; MARGIN-LEFT: 240px; OVERFLOW: hidden
+}
+#jobInRel H2 {
+	MARGIN: 25px 0px 25px 20px; FONT: bold 20px/24px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; COLOR: #c4c4c4
+}
+#jobInRel UL.projets {
+	OVERFLOW: visible
+}
+#jobInRel UL.projets LI {
+	MARGIN-LEFT: 20px; MARGIN-RIGHT: 0px
+}
+UL.navScroll {
+	PADDING-BOTTOM: 0px; LIST-STYLE-TYPE: none; MARGIN: 0px 0px 20px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; OVERFLOW: hidden; LIST-STYLE-IMAGE: none; PADDING-TOP: 0px
+}
+.navScroll LI {
+	FLOAT: left
+}
+.navScroll LI A {
+	TEXT-INDENT: -8888px; WIDTH: 27px; DISPLAY: block; HEIGHT: 27px
+}
+#single-wrapper .navScroll LI A:hover {
+	BACKGROUND-POSITION: left bottom
+}
+.navScroll LI.scrollPrev A {
+	BACKGROUND: url(images/btn_prev.png) no-repeat left top
+}
+.navScroll LI.scrollNext A {
+	BACKGROUND: url(images/btn_next.png) no-repeat left top
+}
+.navScroll LI.scrollAll A {
+	BACKGROUND: url(images/btn_all_projects.png) no-repeat left top
+}
+.navScroll LI.scrollAll {
+	BORDER-LEFT: #e6e6e6 1px solid; PADDING-BOTTOM: 0px; MARGIN: 0px 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BORDER-RIGHT: #e6e6e6 1px solid; PADDING-TOP: 0px
+}
+P.goTop {
+	TEXT-ALIGN: center
+}
+.tooltip {
+	Z-INDEX: 3; POSITION: absolute; DISPLAY: none; TOP: 0px; LEFT: 0px
+}
+.adresse UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.adresse LI {
+	TEXT-ALIGN: left; LIST-STYLE-TYPE: none; LIST-STYLE-IMAGE: none
+}

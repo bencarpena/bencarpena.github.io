@@ -1,0 +1,493 @@
+/*
+	Bright Oaks Stylesheet
+	by BC
+	BrightOaks@gmail.com
+*/
+
+BODY {
+	LINE-HEIGHT: 1.8; 
+
+	FONT-FAMILY: "Helvetica Neue Light", Helvetica, Georgia, Arial, Verdana, sans-serif; 
+
+	FONT-SIZE: 13px; 
+	FONT-WEIGHT: normal;
+	
+	
+	/* 
+	background-image: url(../images/b-background.jpg);
+	background-repeat: repeat-x;
+	*/
+
+}
+
+/*	Main CONTENT holder */
+/* ----------------------------------------------------- */
+#mainHolder 
+{ 
+		Z-INDEX: 1; 
+		POSITION: relative; 
+		TEXT-ALIGN: left; 
+		MARGIN: auto; 
+		WIDTH: 950px;
+} 
+/* ----------------------------------------------------- */
+
+
+
+/* Navigations */
+/* ----------------------------------------------------- */
+#button 
+	{
+		top: 145px;
+		position: absolute;
+		width: 12em;
+		
+		padding: 0 0 0 0;
+		font-family: Georgia, Arial,'Lucida Grande', Verdana, Arial, sans-serif;
+		font-size: 14px;
+		color: #34331F;
+		
+		
+	}
+
+#button ul 
+	{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border: none;
+	}
+	
+#button li 
+	{
+		border-bottom: 1px solid #E5E5E5;
+		margin: 0;
+		list-style: none;
+		list-style-image: none;
+	}
+	
+#button li a 
+	{
+		display: block;
+		padding: 5px 5px 5px 0.5em;
+	
+		color: #000;
+		text-decoration: none;
+		
+	}
+html>body #button li a 
+	{
+		width: auto;
+	}
+#button li a:hover 
+	{
+	
+		color: #F4B518;
+		FONT-WEIGHT: bold
+	}
+/* ----------------------------------------------------- */
+
+
+
+/*	CONTENT	*/
+/* ----------------------------------------------------- */
+#div-home
+	{
+		position: absolute;
+		left: 188px;
+		top: 120px;
+		/*
+		border-left: 1px solid #E5E5E5;
+		border-right: 1px solid #E5E5E5;
+		border-top: 1px solid #E5E5E5;
+		border-bottom: 1px solid #E5E5E5;
+		*/
+		padding: 15px 5px 15px 5px;
+		font-family: Georgia, Arial,'Lucida Grande', Verdana, Arial, sans-serif;
+		font-size: 12px;
+		font-color: #34331F;
+		text-align: center;
+		background: #fff;
+		width: 728px;
+		height: 400px;
+		display: none;
+	}
+#div-home span#mainmsg
+	{
+		position: absolute;
+		left: 384px;
+		top: 160px;
+		text-align: left;
+		
+		width: 400px;
+		color: #fff;
+		display:none;
+		font-size: 16px;
+	}
+#div-home h1
+	{
+		position: absolute;
+		left: 345px;
+		top: 130px;
+		text-align: left;
+		width: 400px;
+		color: #fff;
+		display:none;
+		font-size: 20px;
+		font-weight: normal;
+		letter-spacing:.11em;
+	}
+#div-contact
+	{
+		position: absolute;
+		left: 188px;
+		top: 120px;
+		
+		border-left: 1px solid #E5E5E5;
+		border-right: 1px solid #E5E5E5;
+		border-top: 1px solid #E5E5E5;
+		border-bottom: 1px solid #E5E5E5;
+		
+
+		padding: 0px;
+		font-family: Georgia, Arial,'Lucida Grande', Verdana, Arial, sans-serif;
+		font-size: 14px;
+		font-color: #34331F;
+		text-align: left;
+		background: #fff;
+		width: 728px;
+		height: 400px;
+		line-height: 2.1;
+		
+		display:none;
+	}
+#div-contact span#contact
+	{
+		position: absolute;
+		left: 44px;
+		top: 100px;
+		text-align: left;
+		width: 400px;
+		display:none;
+	}
+
+#div-contact img
+	{
+		position: absolute;
+		left: 428px;
+		top: 0px;
+		text-align: left;
+ 		cursor: pointer;
+		display:none;
+	}
+#div-contact a
+	{
+			text-decoration: none;
+			color: #F4B518;
+			
+	}
+#div-contact a:visited 
+	{
+			text-decoration: none;
+			color: #F4B518;
+	
+	}
+#div-contact a:hover 
+	{
+			text-decoration: underline;
+			color: #F4B518;
+	
+	}
+	
+	
+#div-about01
+	{
+		position: absolute;
+		left: 188px;
+		top: 120px;
+		/*
+		border-left: 1px solid #E5E5E5;
+		border-right: 1px solid #E5E5E5;
+		border-top: 1px solid #E5E5E5;
+		border-bottom: 1px solid #E5E5E5;
+		*/ 
+
+		padding: 0px;
+		font-family: Georgia, Arial,'Lucida Grande', Verdana, Arial, sans-serif;
+		font-size: 14px;
+		font-color: #34331F;
+		text-align: left;
+		background: #fff;
+		width: 728px;
+		height: 400px;
+		line-height: 2.1;
+		
+		display:none;
+	}
+#div-about01 span#about01
+	{
+		position: absolute;
+		left: 44px;
+		top: 1px;
+		border-right: 1px solid #E5E5E5;
+		text-align: left;
+		width: 250px;
+		height: 400px;
+		display:none;
+	}
+
+#div-about01 span#about01c
+	{
+		position: absolute;
+		left: 44px;
+		top: 1px;
+		border-right: 1px solid #E5E5E5;
+		text-align: left;
+		width: 250px;
+		height: 400px;
+		display:none;
+	}
+
+#div-about01 img
+	{
+		position: absolute;
+		left: 428px;
+		top: 0px;
+		text-align: left;
+ 		cursor: pointer;
+		display:none;
+	}
+#div-about01 a
+	{
+			text-decoration: none;
+			color: #F4B518;
+			
+	}
+#div-about01 a:visited 
+	{
+			text-decoration: none;
+			color: #F4B518;
+	
+	}
+#div-about01 a:hover 
+	{
+			text-decoration: underline;
+			color: #F4B518;
+	
+	}
+
+#div-about01 H3 {
+	PADDING-BOTTOM: 0px; 
+	LINE-HEIGHT: 50px; 
+	FONT-STYLE: italic; 
+	FONT-WEIGHT: normal; 
+	MARGIN: 0px; 
+	PADDING-LEFT: 20px; 
+	PADDING-RIGHT: 20px; 
+	FONT-FAMILY: Times New Roman, Georgia, serif; 
+	COLOR: #4d4d4d; 
+	FONT-SIZE: 35px; 
+	PADDING-TOP: 15px
+}
+
+#div-about01 H4 {
+	/*
+	BACKGROUND-IMAGE: url(images/border.png); 
+	BACKGROUND-REPEAT: repeat-x;
+	BACKGROUND-POSITION: left center; 
+	*/
+	position: absolute;
+	left: 280px;
+	width: 230px;
+	PADDING-BOTTOM: 5px; 
+	FONT-WEIGHT: normal; 
+	PADDING-LEFT: 0px; 
+	PADDING-RIGHT: 0px;  FONT-FAMILY: Georgia, Times, serif; 
+	COLOR: #999; 
+	FONT-SIZE: 15px; 
+	PADDING-TOP: 45px;
+	line-height: 1.6;
+	border-bottom: 1px solid #E5E5E5;
+	
+}
+
+
+
+#logo
+{
+	position: absolute;
+	left: -10px;
+	top: 10px;
+	MARGIN: auto; 
+}
+
+#header {
+	left: 150px;
+	POSITION: relative; 
+	WIDTH: 80px; 
+	HEIGHT: 49px;
+	top: 130px;
+}
+#header UL {
+	list-style: none;
+		margin: 0;
+		padding: 0;
+		border: none;
+}
+#header LI {
+	border-bottom: 1px solid #dee78c;
+	margin: 0;
+	list-style: none;
+	list-style-image: none;
+}
+#header A:hover {
+	COLOR: #F4B518; 
+	FONT-WEIGHT: bold; 
+	TEXT-DECORATION: none
+}
+/* ----------------------------------------------------- */
+
+
+/*	About Us sliders	*/
+/* ----------------------------------------------------- */
+	*{ padding:0px; margin:0px; }
+		
+
+			h3{ margin: 10px 10px 0 10px; color:#FFF; font:14pt Arial, sans-serif; letter-spacing:-1px; font-weight: bold;  }
+			h4{ color:#FFF; font:14pt Georgia, sans-serif; letter-spacing:-1px; font-weight: bold;  }
+
+			.boxgrid{ 
+			
+				left: 188px;
+				top: 120px;
+				
+				width: 345px; 
+				height: 145px; 
+				margin:10px; 
+				float:left; 
+				background:#161613; 
+				border: solid 2px #8399AF; 
+				overflow: hidden; 
+				position: relative; 
+			}
+			.boxgrid span#spbright
+			{
+				position: relative; color:#FFF; font:18pt Garamond, Georgia, sans-serif; padding: 0 15px;
+			}
+			.boxgrid a#brighta
+			{
+				position: relative;padding: 0 80px; COLOR: #F4B518; 
+			}
+			.boxgrid A:link {
+				COLOR: #F4B518; TEXT-DECORATION: none
+			}
+			.boxgrid A:visited {
+				COLOR: #F4B518; TEXT-DECORATION: none
+			}
+			.boxgrid A:hover {
+				
+				COLOR: #F4B518; TEXT-DECORATION: underline;
+				/* COLOR: #ff5800; TEXT-DECORATION: none */
+			}
+				.boxgrid img{ 
+					position: absolute; 
+					top: 0; 
+					left: 0; 
+					border: 0; 
+				}
+				.boxgrid p{ 
+					padding: 0 10px; 
+					color:#afafaf; 
+					font-weight:bold; 
+					font:10pt "Lucida Grande", Arial, sans-serif; 
+				}
+				.boxgrid p#future{ 
+					padding: 0 12px; 
+					color:#fff; 
+					font-weight:bold; 
+					font:12pt Arial,"Lucida Grande", Arial, sans-serif; 
+				}
+			.boxcaption{ 
+			
+				float: left; 
+				position: absolute; 
+				background: #000; 
+				height: 65px; 
+				width: 100%; 
+				opacity: .8; 
+				/* For IE 5-7 */
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+				/* For IE 8 */
+				-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+ 			}
+			.solutions span.spsol{ 
+				background-image: url(about-solutions-1.jpg);
+				height: 145px;
+				width: 345px;
+				position:relative;
+			}
+			
+ 				.captionfull .boxcaption {
+ 					top: 125px;
+ 					left: 0;
+					
+ 				}
+ 				.caption .boxcaption {
+ 					top: 125px;
+ 					left: 0;
+ 				}
+
+			.boxcaptionf {
+ 					top: 0px;
+ 					left: 0;
+ 				}
+/* ----------------------------------------------------- */
+
+/*	Adhoc elements	*/
+/* ####################################################### */
+
+/*
+H1 {
+	MARGIN: 0px; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+H2 {
+	MARGIN: 0px; FONT-SIZE: 13px; FONT-WEIGHT: normal
+}
+*/
+
+
+A IMG {
+	BORDER-BOTTOM-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-TOP-STYLE: none; BORDER-LEFT-STYLE: none
+}
+A:link {
+	COLOR: #F4B518; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #F4B518; TEXT-DECORATION: none
+}
+A:hover {
+	
+	COLOR: #F4B518; TEXT-DECORATION: none
+	/* COLOR: #ff5800; TEXT-DECORATION: none */
+}
+A:active {
+	COLOR: #F4B518; TEXT-DECORATION: none
+}
+A.nav:hover {
+	COLOR: #F4B518; TEXT-DECORATION: none
+}
+P {
+	MARGIN-TOP: 0px
+}
+P.caption {
+	COLOR: #000000; PADDING-TOP: 8px
+}
+A.gray {
+	COLOR: #808080; TEXT-DECORATION: none
+}
+A.gray:hover {
+	COLOR: #F4B518; TEXT-DECORATION: none
+}
+.gray {
+	COLOR: #808080; TEXT-DECORATION: none
+}

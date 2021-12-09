@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- saved from url=(0088)https://alistapart.github.io/code-samples/responsive-web-design/ex/ex-site-flexible.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<title>benjamin.carpena | delivering a promise</title>
+
+<meta name="bc.author" content="Benjamin Carpena" />
+<meta name="bc.description" content="volunteer computer science teacher, solution architect, data engineer, cloud engineer, software engineer, cybersecurity specialist, enterprise architecct, web designer" />
+<meta name="bc.keywords" content="empathy, innovate, innovator, engineer, volunteer computer science teacher, solution architect, data engineer, cloud engineer, software engineer, cybersecurity specialist, enterprise architecct, web designer" />
+<link href="httpdata/images/icon/brightoaks.ico" rel="SHORTCUT ICON">
+<meta name="bc.language" content="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css" media="screen, projection">
+.section:after,
+ul.nav:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td { margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent; }
+body { line-height:1; }
+ol,ul { list-style:none; }
+blockquote,q { quotes:none; }
+blockquote:before,blockquote:after,q:before,q:after { content:'';content:none; }
+ins { text-decoration:none; }
+del { text-decoration:line-through; }
+table { border-collapse:collapse;border-spacing:0; }
+
+body {
+	background: #ffffff url("site/bg.png");
+	color: #292929;
+	color: rgba(0, 0, 0, 0.82);
+	font: normal 100% Cambria, Georgia, serif;
+	-moz-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+	-webkit-text-size-adjust: none;
+}
+a {
+	color: #890101;
+	text-decoration: none;
+	-moz-transition: 0.2s color linear;
+	-webkit-transition: 0.2s color linear;
+	transition: 0.2s color linear;
+}
+a:hover {
+	color: #DF3030;
+}
+#page {
+	background: url("site/rag.png") repeat-x;
+	padding: 2em 0;
+}
+.inner {
+	margin: 0 auto;
+	width: 93.75%;		/* 960px / 1024px */
+}
+img {
+	max-width: 100%;
+}
+.amp {
+	font-family: Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	font-style: italic;
+	font-weight: normal;
+}
+.mast {
+	float: left;
+	width: 31.875%;	/* 306px / 960px */
+}
+h1 {
+	align-self: center;
+    font-size: 3.25rem;
+    grid-column: full-content-start/span 4;
+    grid-row: 1;
+}
+h1 a {
+	padding-top: 117px;
+	height: 162px;
+	display: block;
+	text-align: center;
+}
+.intro,
+.main,
+.footer {
+	float: right;
+	width: 65.9375%;	/* 633px / 960px */
+}
+.intro {
+	margin-top: 117px;
+}
+.intro div {
+	line-height: 1.4;
+}
+ul.nav {
+	padding: 5em 0.5em 3em;
+	border-top: 1px solid #888583;
+	margin: 2em auto 0;
+	width: 64.379%;
+}
+ul.nav a {
+	/* background: url("site/ornament.png") no-repeat 0 100%; */
+	font: bold 14px/1.2 Arial, "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	display: block;
+	text-align: center;
+	letter-spacing: 0.1em;
+	padding: 1em 0.5em 3em;
+	margin-bottom: -1em;
+	text-transform: uppercase;
+	color: #69BB39;
+}
+ul.nav a:hover {
+	background-position: 50% 100%;
+	color:#ECC848;
+}
+li.first a {
+	border-top: 1px solid #FFF9EF;
+	padding-top: 1.25em;
+}
+ul.nav i {
+	font: normal 10px Arial, Verdana, Baskerville, Garamond, Palatino, "Palatino Linotype", "Hoefler Text", "Times New Roman", serif;
+	display: block;
+	letter-spacing: 0.05em;
+}
+.intro h2 {
+	font: normal 2em "Hoefler Text", "Baskerville old face", Garamond, "Times New Roman", serif;
+	text-align: center;
+	margin-bottom: 0.25em;
+}
+.main h2 {
+	/* background: url("site/ornament.png") no-repeat 0 50%; */
+	font-size: 1.4em;
+	text-transform: lowercase;
+	text-align: center;
+	margin: 0.75em 0 1em;
+}
+.main h2 b {
+	/* background: url("site/bg.png"); */
+	font-weight: normal;
+	padding: 0 1em;
+}
+.figure {
+	float: left;
+	font-size: 10px;
+	letter-spacing: 0.05em;
+	line-height: 1.1;
+	margin: 0 3.317535545023696682% 1.5em 0;			/* 21px / 633px */
+	text-align: center;
+	text-transform: uppercase;
+	width: 31.121642969984202211%;				/* 197px / 633px */
+}
+.figure b {
+	display: block;
+	font-size: 14px;
+	font-family: "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	letter-spacing: 0.1em;
+}
+.figure img {
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);;
+	display: block;
+	margin: 0 auto 1em;
+}
+li#f-mycroft,
+li#f-winter {
+	margin-right: 0;
+}
+.footer {
+	background: url("site/ornament.png") 50% 0 repeat-x;
+	font-size: 12px;
+	text-align: center;
+	padding: 40px 0 20px;
+}
+.footer p {
+	margin-bottom: 0.5em;
+}
+/*
+#div-home
+	{
+
+		left: 188px;
+		top: 120px;
+
+		padding: 15px 5px 15px 5px;
+		font-family: Times New Roman, Georgia, Arial,'Lucida Grande', Verdana, Arial, sans-serif;
+		font-size: 12px;
+		text-align: center;
+		width: 700px;
+		height: 400px;
+	}
+*/
+#div-home h1
+	{
+		position: relevant;
+		left: 48%;
+		top: 40%;
+
+		display: block;
+		margin-block-start: 1em;
+		margin-block-end: 1em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		
+		text-align: left;
+		width: 400px;
+		color: #fff;
+
+		font-size: 20px;
+		font-weight: normal;
+		letter-spacing:0.091em;
+		font-family: Arial, sans-serif, Arial, Helvetica, sans-serif;
+	}
+</style>
+
+</head>
+
+<body>
+
+<div id="page">
+	<div class="inner">
+		<div class="mast">
+			<h1 id="logo"><a href="https://bencarpena.github.io/?launch=grit8"><img src="./index_files/bc.png" alt="Benjamin Carpena"></a></h1>
+
+			<ul class="nav">
+				<li class="first"><a href="https://github.com/bencarpena/shared" target="_blank"><i>My</i> Projects</a></li>
+				<li><a href="https://linkedin.com/in/bencarpena" target="_blank"><i>View My</i> LinkedIn</a></li>
+				<li class="last"><a href="https://twitter.com/bencarpena" target="_blank"><i>Randoms on</i> Twitter</a></li>
+			</ul><!-- /end .nav -->
+		</div><!-- /end .mast -->
+
+		<div class="section intro">
+			<div id="section-intro">
+				<h1>empathize. innovate. <em>do.</em></h1>
+				<div id="div-home"> 
+					<h1 id="h1"><br />/ Enterprise Architect <br />/ Data and Software Engineer <br />/ Cloud and Cybersecurity Engineer<br />/ Computer and IoT Engineer</h1>
+					<img alt="#Empathy #Servant-Leader #DoersDo" title="#Empathy #Servant-Leader #DoersDo" src="index_files/splash.jpg"  /> </div>
+				</div>
+				<p>I am passionate about applying technology to advance meaningful and cutting-edge transformational changes that will help make our world a better place <abbr class="amp" title="And">&amp;</abbr> make a dent in the universe.</p>
+			</div>
+		</div><!-- /end .section.intro -->
+		<!--
+		<div class="section main">
+			<h2><b>delivering results <abbr class="amp" title="And">&amp;</abbr> servant-leadership</b></h2>
+			
+		</div>
+		-->
+	<!-- /end .section.main -->
+
+		<div class="footer">
+			<p>Thoughts, content, design, concepts & ideas in this page are <a href="mailto:benjcarpena@gmail.com">mine</a>.</p>
+			<p>Site <a href="https://ethanmarcotte.com/">inspiration</a>.</p>
+		</div><!-- /end .footer -->
+	</div><!-- /end .inner -->
+</div><!-- /end #page -->
+
+
+
+
+</body></html>

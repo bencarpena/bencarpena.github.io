@@ -1,2 +1,6 @@
 # bencarpena.github.io
-GitHub pages
+## What
+- My portfolio and further reads about me
+- Thank you.
+
+@bencarpena

@@ -1,35 +1,40 @@
 # Item list for Project Malibu
 
-1. Project Malibu
-2. Platform : Azure Data Factory
-3. Platform : Azure Data Lake
+1. Project Tesseract
+2. Platform : 1
+3. Platform : 2
 
 
-4. FACT : Global Energy Data
-5. FACT : Global Environment Data
-6. FACT : Global Security Data
-7. FACT : Global Health Data
-8. FACT : Global Safety Data
+4. FACT : 300
+5. FACT : 301
+6. FACT : 302
+7. FACT : 303
+8. FACT : 304
 
 
-9. System : MyEHS
-10. System : External Insurance
-11. System : Ignition
-12. System : External API Sureview
-13. System : External API SafetySkills
-14. System : TRT
-15. System : Finance Master
-16. System : HROS
-17. System : Kronos
-18. System : External AQI
-19. System : Fire Collection
-20. System : Training Data
-21. System : Contractor Mgmt
-22. System : GRID
-23. System : Seeq
-24. System : File EHSS Sharepoint
-25. System : External OSHA
-26. System : External ASTM 
-27. System : Internal Custom
-28. System : Zurich
-29. System : Aetna
+9. System : A
+10. System : B
+11. System : C
+12. System : D
+13. System : E
+14. System : F
+15. System : G
+16. System : H
+17. System : I
+18. System : J
+19. System : K
+20. System : L
+21. System : M
+22. System : N
+23. System : O
+24. System : P
+25. System : Q
+26. System : R 
+27. System : S
+28. System : T
+29. System : U
+
+30. KPI 300 : 8001
+31. KPI 300 : 8002
+32. KPI 301 : 8101
+33. KPI 302 : 8102

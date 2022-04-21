@@ -1,4 +1,4 @@
-# Item list for Project Malibu
+# Item list for Project Tesseract
 
 1. Project Tesseract
 2. Platform : 1

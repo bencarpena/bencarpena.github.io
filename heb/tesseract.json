@@ -1,0 +1,242 @@
+[
+  
+  {
+    "name": "Project Tesseract",
+    "size": 5001,
+    "imports": ["Platform : 2", "Platform : 1"]
+  },
+  {
+    "name": "Platform : 2",
+    "size": 5002,
+    "imports": ["System : A", 
+                "System : B", 
+                "System : C", 
+                "System : D", 
+                "System : E",
+                "System : F", 
+                "System : G", 
+                "System : H",
+                "System : I", 
+                "System : J", 
+                "System : K", 
+                "System : L",
+                "System : M", 
+                "System : N", 
+                "System : O",
+                "System : P", 
+                "System : Q"
+    ]
+  },
+  {
+    "name": "Platform : 1",
+    "size": 5003,
+    "imports": ["FACT : 300", 
+                "FACT : 301",
+                "FACT : 302",
+                "FACT : 303",
+                "FACT : 304"
+    ]
+  },
+  { 
+    "name": "FACT : 300", 
+    "size": 5004, 
+    "imports": ["System : A", 
+                "System : F",
+                "System : H", 
+                "System : I", 
+                "System : L", 
+                "System : M",
+                "System : N", 
+                "System : E",
+                "System : C", 
+                "System : Q",
+                "System : R", 
+                "System : G"
+    
+    ] 
+  
+  },
+  {
+    "name": "FACT : 301",
+    "size": 5005,
+    "imports": ["System : A", 
+                "System : F",
+                "System : H", 
+                "System : I",
+                "System : L", 
+                "System : M",
+                "System : N", 
+                "System : J",
+                "System : S", 
+                "System : R",
+                "System : G",
+                "System : Q"
+    
+    ]
+  },
+  {
+    "name": "FACT : 302",
+    "size": 5006,
+    "imports": ["System : A",
+                "System : F",
+                "System : H",
+                "System : I",
+                "System : D",
+                "System : G"
+    ]
+  },
+  
+  {
+    "name": "FACT : 303",
+    "size": 5007,
+    "imports": ["System : A", 
+                "System : B",
+                "System : T", 
+                "System : U",
+                "System : F", 
+                "System : H",
+                "System : S", 
+                "System : R",
+                "System : I", 
+                "System : G"
+        
+          ]
+  },
+  {
+    "name": "FACT : 304",
+    "size": 5008,
+    "imports": ["System : A", 
+                "System : B",
+                "System : T", 
+                "System : U",
+                "System : F", 
+                "System : H",
+                "System : S", 
+                "System : R",
+                "System : I", 
+                "System : K",
+                "System : L", 
+                "System : M",
+                "System : G"
+    
+    ]
+  },
+  {
+    "name": "System : A",
+    "size": 5009,
+    "imports": ["System : F",
+                "System : H",
+                "System : I",
+                "System : G",
+                "System : R",
+                "System : B",
+                "System : T",
+                "System : U"
+    
+    ]
+  },
+  {
+    "name": "System : B",
+    "size": 5010,
+    "imports": ["System : O", 
+              "System : P"]
+  },
+  {
+    "name": "System : C",
+    "size": 5011,
+    "imports": ["System : R"]
+  },
+  {
+    "name": "System : D",
+    "size": 5012,
+    "imports": []
+  },
+  {
+    "name": "System : E",
+    "size": 5013,
+    "imports": []
+  },
+  {
+    "name": "System : F",
+    "size": 5014,
+    "imports": []
+  },
+  {
+    "name": "System : G",
+    "size": 5015,
+    "imports": []
+  },
+  {
+    "name": "System : H",
+    "size": 5016,
+    "imports": []
+  },
+  {
+    "name": "System : I",
+    "size": 5017,
+    "imports": []
+  },
+  {
+    "name": "System : J",
+    "size": 5018,
+    "imports": []
+  },
+  {
+    "name": "System : K",
+    "size": 5019,
+    "imports": ["System : R"]
+  },
+  {
+    "name": "System : L",
+    "size": 5020,
+    "imports": ["System : E", 
+                "System : R"]
+  },
+  {
+    "name": "System : M",
+    "size": 5021,
+    "imports": ["System : A", 
+                "System : R"]
+  },
+  {
+    "name": "System : N",
+    "size": 5022,
+    "imports": []
+  },
+  {
+    "name": "System : Q",
+    "size": 5023,
+    "imports": []
+  },
+  {
+    "name": "System : S",
+    "size": 5024,
+    "imports": []
+  },
+  {
+    "name": "System : T",
+    "size": 5025,
+    "imports": []
+  },
+  {
+    "name": "System : U",
+    "size": 5026,
+    "imports": []
+  },
+  {
+    "name": "System : R",
+    "size": 5027,
+    "imports": []
+  },
+  {
+    "name": "System : O",
+    "size": 5028,
+    "imports": []
+  },
+  {
+    "name": "System : P",
+    "size": 5029,
+    "imports": []
+  }
+
+]

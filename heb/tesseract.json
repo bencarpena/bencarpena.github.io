@@ -1,10 +1,6 @@
 [
   
-  {
-    "name": "Project Tesseract",
-    "size": 5001,
-    "imports": ["Platform : 2", "Platform : 1"]
-  },
+ 
   {
     "name": "Platform : 2",
     "size": 5002,
@@ -36,6 +32,11 @@
                 "FACT : 303",
                 "FACT : 304"
     ]
+  },
+  {
+    "name": "Project Tesseract",
+    "size": 5001,
+    "imports": ["Platform : 2", "Platform : 1"]
   },
   { 
     "name": "FACT : 300", 

@@ -248,6 +248,16 @@
     "name": "KPI 300 : 8002",
     "size": 5029,
     "imports": ["FACT : 300"]
+  },
+  {
+    "name": "KPI 301 : 8101",
+    "size": 5029,
+    "imports": ["FACT : 301", "FACT : 300"]
+  },
+  {
+    "name": "KPI 301 : 8102",
+    "size": 5029,
+    "imports": ["FACT : 301"]
   }
 
 ]

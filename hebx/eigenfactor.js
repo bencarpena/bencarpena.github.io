@@ -58,7 +58,7 @@ function svgshadowfilter() {
  */
 
 const currentYear = `2005`;
-window.alert(currentYear);
+
 async function loadMapRawData() {
   return await Promise.all([
     d3.text(`data/science${currentYear}links.txt`),

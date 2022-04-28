@@ -61,17 +61,17 @@ const currentYear = `2005`;
 
 async function loadMapRawData() {
   return await Promise.all([
-    d3.text(`http://well-formed.eigenfactor.org/data/science${currentYear}links.txt`),
-    d3.text(`http://well-formed.eigenfactor.org/data/science${currentYear}nodes.txt`),
-    d3.text(`http://well-formed.eigenfactor.org/data/science${currentYear}tree.txt`),
-    d3.json("http://well-formed.eigenfactor.org/data/mapgml.json")
+    d3.text(`data/science${currentYear}links.txt`),
+    d3.text(`data/science${currentYear}nodes.txt`),
+    d3.text(`data/science${currentYear}tree.txt`),
+    d3.json("data/mapgml.json")
   ]);
 }
 async function loadRawData(year = currentYear) {
   return await Promise.all([
-    d3.text(`http://well-formed.eigenfactor.org/data/science${year}links_mo.txt`),
-    d3.text(`http://well-formed.eigenfactor.org/data/science${year}nodes_mo.txt`),
-    d3.text(`http://well-formed.eigenfactor.org/data/science${year}tree_mo.txt`)
+    d3.text(`data/science${year}links_mo.txt`),
+    d3.text(`data/science${year}nodes_mo.txt`),
+    d3.text(`data/science${year}tree_mo.txt`)
   ]);
 }
 async function loadRawSankeyData(year = currentYear) {

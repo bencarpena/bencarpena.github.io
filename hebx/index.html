@@ -14,57 +14,6 @@
 
 <!--  https://beta.observablehq.com/@jamaludin-sanur/d3-hierarchical-edge-bundling -->
 
-  <svg class="radial" width="1410" height="652">
-      <defs>
-        <style type="text/css">
-    svg {background: #f0f0f0; }
-
-svg text, button {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-}
-svg text::selection {
-    background: none;
-}
-
-    text { font-family: flama, sans-serif; font-weight: bold; }
-
-    #maintitle rect, .maintitle rect { fill: none; }
-    #maintitle text, .maintitle text { fill: #555; font-size: 1em; font-family: flama, sans-serif; font-weight: bold;  }
-
-    g.tooltip {}
-    g.tooltip rect.background {fill: #000000; stroke: #333333; fill-opacity: 0.8}
-    g.tooltip text.text {font-family: flama, sans-serif; font-weight: bold; font-size: 12px;}
-    g.tooltip text.text tspan.title {fill: #ffffff;}
-    g.tooltip text.text tspan.detail {fill: #aaaaaa;}
-
-
-g#links path.link { fill: none; pointer-events: none; }
-g#links path.link.colour { mix-blend-mode: multiply }
-g#labels text.label { font-weight: normal; font-size: 10px; mix-blend-mode: darken; }
-
-g#innerArcs path.innerArc.clicked { fill: #222222 }
-g#innerArcs path.innerArc.unlinked { fill: #DDDDDD }
-g#innerArcs path.innerArc:hover { fill: #444444; }
-
-g#outerArcs path.outerArc.clicked { fill: #222222 }
-g#outerArcs path.outerArc:hover { fill: #444444; }
-g#outerArcs path.outerArc.unlinked { fill: #DDDDDD; }
-</style>
-        
-        <filter id="drop-shadow">
-          <fedropshadow dx="1" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.5">
-          </fedropshadow>
-        </filter>
-
-      </defs>
-   
-
-  <script>
-  vis = "radial";
-</script>
   <script src="assets/d3v5.min.js"></script>
   <script src="assets/d3-hsv.min.js"></script>
   <script src="eigenfactor.js"></script>
@@ -74,4 +23,6 @@ g#outerArcs path.outerArc.unlinked { fill: #DDDDDD; }
 
 
 
-<button id="fullscreen" style="cursor:pointer;">Fullscreen</button></body></html>
+<button id="fullscreen" style="cursor:pointer;">Fullscreen</button>
+</body>
+</html>

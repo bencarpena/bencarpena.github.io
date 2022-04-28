@@ -61,24 +61,24 @@ const currentYear = `2005`;
 window.alert(currentYear);
 async function loadMapRawData() {
   return await Promise.all([
-    d3.text(`data/science${currentYear}links.txt`),
-    d3.text(`data/science${currentYear}nodes.txt`),
-    d3.text(`data/science${currentYear}tree.txt`),
+    d3.text('data/science2005links.txt'),
+    d3.text('data/science2005nodes.txt'),
+    d3.text('data/science2005tree.txt'),
     d3.json("data/mapgml.json")
   ]);
 }
 async function loadRawData(year = currentYear) {
   window.alert(year);
   return await Promise.all([
-    d3.text(`data/science${year}links_mo.txt`),
-    d3.text(`data/science${year}nodes_mo.txt`),
-    d3.text(`data/science${year}tree_mo.txt`)
+    d3.text('data/science2005links_mo.txt'),
+    d3.text('data/science2005nodes_mo.txt'),
+    d3.text('data/science2005tree_mo.txt')
   ]);
 }
 async function loadRawSankeyData(year = currentYear) {
   return await Promise.all([
-    d3.text(`data/science${year}nodes_mo.txt`),
-    d3.text(`data/science${year}tree_mo.txt`)
+    d3.text('data/science2005nodes_mo.txt'),
+    d3.text('data/science2005tree_mo.txt')
   ]);
 }
 

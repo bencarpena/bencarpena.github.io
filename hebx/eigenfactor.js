@@ -68,6 +68,7 @@ async function loadMapRawData() {
   ]);
 }
 async function loadRawData(year = currentYear) {
+  window.alert(year);
   return await Promise.all([
     d3.text(`data/science${year}links_mo.txt`),
     d3.text(`data/science${year}nodes_mo.txt`),

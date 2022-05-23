@@ -1,0 +1,156 @@
+[
+  {
+    "name": "FACT: Injury/Illness Events",
+    "size": 3002,
+    "imports": ["System: MyEHS", 
+		"System: Gensuite", 
+		"System: TRT", 
+		"System: Finance Masters", 
+		"Server: utopia", 
+		"Server: sp", 
+		"Table: SiteHandSCase", 
+		"Table: dim_InjuryIllness", 
+		"Table: dimTRTstore", 
+		"Table: Tesla_DWH.FPA.DimCostCenter"
+		]
+  },
+  {
+    "name": "FACT: Headcount",
+    "size": 3003,
+
+    "imports": ["System: HROS", 
+		"Table: Dim_EmployeeNonSensitive", 
+		"System: Finance Masters", 
+		"Table: Tesla_DWH.FPA.DimCostCenter", 
+		"Mapping: Remote Mapping", "Mapping: OSHA Mapping"
+		]
+  },
+  {
+    "name": "FACT: Work Hours",
+    "size": 3001,
+    "imports": ["System: HROS", 
+		"System: Kronos", 
+		"System: Finance Masters", 
+		"Mapping: OSHA Mapping", 
+		"Mapping: Hours Allocation", 
+		"Mapping: Remote Mapping", 
+		"Table: Tesla_DWH.FPA.DimCostCenter", 
+		"Table: Dim_EmployeeNonSensitive", 
+		"Table: dimTRTstore", 
+		"Table: Kronos_Paycode_Hours_History"
+		]
+
+  },
+  { 
+    "name": "KPI: OSHA Rates", 
+    "size": 3004, 
+    "imports": ["FACT: Injury/Illness Events", 
+		"FACT: Work Hours", 
+		"FACT: Headcount"
+		] 
+},
+
+  {
+    "name": "KPI: ASTM",
+    "size": 3005,
+    "imports": ["FACT: Injury/Illness Events", 
+		"FACT: Work Hours", 
+		"FACT: Headcount"
+		]
+  },
+  {
+    "name": "Table: Kronos_Paycode_Hours_History",
+    "size": 3006,
+    "imports": ["Server: edw", "System: Kronos"]
+  },
+  {
+    "name": "Table: dim_InjuryIllness",
+    "size": 3007,
+    "imports": ["System: MyEHS", "Server: utopia"]
+  },
+  {
+    "name": "Table: Dim_EmployeeNonSensitive",
+    "size": 3008,
+    "imports": ["Server: edw", "System: HROS"]
+  },
+  {
+    "name": "Table: dimTRTstore",
+    "size": 3009,
+    "imports": ["Server: edw", "System: TRT"]
+  },
+  {
+    "name": "Table: Tesla_DWH.FPA.DimCostCenter",
+    "size": 3010,
+    "imports": ["Server: edw", "System: Finance Masters"]
+  },
+  {
+    "name": "Table: SiteHandSCase",
+    "size": 3011,
+    "imports": ["Server: sp", "System: Gensuite"]
+  },
+  {
+    "name": "System: MyEHS",
+    "size": 3012,
+    "imports": []
+  },
+  {
+    "name": "System: Gensuite",
+    "size": 3013,
+    "imports": []
+  },
+  {
+    "name": "System: HROS",
+    "size": 3014,
+    "imports": []
+  },
+  {
+    "name": "System: Kronos",
+    "size": 3015,
+    "imports": []
+  },
+
+  {
+    "name": "System: Finance Masters",
+    "size": 3016,
+    "imports": []
+  },
+  
+  {
+    "name": "System: TRT",
+    "size": 3017,
+    "imports": []
+  },
+
+  {
+    "name": "Server: utopia",
+    "size": 3018,
+    "imports": []
+  },
+
+  {
+    "name": "Server: edw",
+    "size": 3019,
+    "imports": []
+  },
+
+  {
+    "name": "Server: sp",
+    "size": 3020,
+    "imports": []
+  },
+  {
+    "name": "Mapping: OSHA Mapping",
+    "size": 3021,
+    "imports": []
+  },
+  {
+    "name": "Mapping: Hours Allocation",
+    "size": 3022,
+    "imports": []
+  },
+  {
+    "name": "Mapping: Remote Mapping",
+    "size": 3023,
+    "imports": []
+  } 
+]

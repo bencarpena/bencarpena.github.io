@@ -1,0 +1,261 @@
+[
+  
+  {
+    "name": "Project Malibu",
+    "size": 5001,
+    "imports": ["Platform : Data Factory", "Platform : Data Lake"]
+  },
+  {
+    "name": "Platform : Data Factory",
+    "size": 5002,
+    "imports": ["System : MyEHS", 
+                "System : External Insurance", 
+                "System : Ignition", 
+                "System : External API Sureview", 
+                "System : External API SafetySkills",
+                "System : TRT", 
+                "System : Finance Master", 
+                "System : HROS",
+                "System : Kronos", 
+                "System : External AQI", 
+                "System : Fire Collection", 
+                "System : Training Data",
+                "System : Contractor Mgmt", 
+                "System : GRID", 
+                "System : Zurich",
+                "System : Aetna", 
+                "System : Seeq"
+    ]
+  },
+  {
+    "name": "Platform : Data Lake",
+    "size": 5003,
+    "imports": ["FACT : Global Energy Data", 
+                "FACT : Global Environment Data",
+                "FACT : Global Security Data",
+                "FACT : Global Health Data",
+                "FACT : Global Safety Data",
+                "PRODUCT : Executive Dashboard"
+    ]
+  },
+  { 
+    "name": "PRODUCT : Executive Dashboard", 
+    "size": 8010, 
+    "imports": ["FACT : Global Energy Data", 
+      "FACT : Global Environment Data",
+      "FACT : Global Health Data",
+      "FACT : Global Safety Data",
+      "FACT : Global Security Data"
+    ] 
+  
+  },
+  { 
+    "name": "FACT : Global Energy Data", 
+    "size": 5004, 
+    "imports": ["System : MyEHS", 
+                "System : TRT",
+                "System : HROS", 
+                "System : Kronos", 
+                "System : Training Data", 
+                "System : Contractor Mgmt",
+                "System : GRID", 
+                "System : External API SafetySkills",
+                "System : Ignition", 
+                "System : Seeq",
+                "System : Internal Custom", 
+                "System : Finance Master"
+    
+    ] 
+  
+  },
+  {
+    "name": "FACT : Global Environment Data",
+    "size": 5005,
+    "imports": ["System : MyEHS", 
+                "System : TRT",
+                "System : HROS", 
+                "System : Kronos",
+                "System : Training Data", 
+                "System : Contractor Mgmt",
+                "System : GRID", 
+                "System : External AQI",
+                "System : File EHSS Sharepoint", 
+                "System : Internal Custom",
+                "System : Finance Master",
+                "System : Seeq"
+    
+    ]
+  },
+  {
+    "name": "FACT : Global Security Data",
+    "size": 5006,
+    "imports": ["System : MyEHS",
+                "System : TRT",
+                "System : HROS",
+                "System : Kronos",
+                "System : External API Sureview",
+                "System : Finance Master"
+    ]
+  },
+  
+  {
+    "name": "FACT : Global Health Data",
+    "size": 5007,
+    "imports": ["System : MyEHS", 
+                "System : External Insurance",
+                "System : External OSHA", 
+                "System : External ASTM",
+                "System : TRT", 
+                "System : HROS",
+                "System : File EHSS Sharepoint", 
+                "System : Internal Custom",
+                "System : Kronos", 
+                "System : Finance Master"
+        
+          ]
+  },
+  {
+    "name": "FACT : Global Safety Data",
+    "size": 5008,
+    "imports": ["System : MyEHS", 
+                "System : External Insurance",
+                "System : External OSHA", 
+                "System : External ASTM",
+                "System : TRT", 
+                "System : HROS",
+                "System : File EHSS Sharepoint", 
+                "System : Internal Custom",
+                "System : Kronos", 
+                "System : Fire Collection",
+                "System : Training Data", 
+                "System : Contractor Mgmt",
+                "System : Finance Master"
+    
+    ]
+  },
+  {
+    "name": "System : MyEHS",
+    "size": 5009,
+    "imports": ["System : TRT",
+                "System : HROS",
+                "System : Kronos",
+                "System : Finance Master",
+                "System : Internal Custom",
+                "System : External Insurance",
+                "System : External OSHA",
+                "System : External ASTM"
+    
+    ]
+  },
+  {
+    "name": "System : External Insurance",
+    "size": 5010,
+    "imports": ["System : Zurich", 
+              "System : Aetna"]
+  },
+  {
+    "name": "System : Ignition",
+    "size": 5011,
+    "imports": ["System : Internal Custom"]
+  },
+  {
+    "name": "System : External API Sureview",
+    "size": 5012,
+    "imports": []
+  },
+  {
+    "name": "System : External API SafetySkills",
+    "size": 5013,
+    "imports": []
+  },
+  {
+    "name": "System : TRT",
+    "size": 5014,
+    "imports": []
+  },
+  {
+    "name": "System : Finance Master",
+    "size": 5015,
+    "imports": []
+  },
+  {
+    "name": "System : HROS",
+    "size": 5016,
+    "imports": []
+  },
+  {
+    "name": "System : Kronos",
+    "size": 5017,
+    "imports": []
+  },
+  {
+    "name": "System : External AQI",
+    "size": 5018,
+    "imports": []
+  },
+  {
+    "name": "System : Fire Collection",
+    "size": 5019,
+    "imports": ["System : Internal Custom"]
+  },
+  {
+    "name": "System : Training Data",
+    "size": 5020,
+    "imports": ["System : External API SafetySkills", 
+                "System : Internal Custom"]
+  },
+  {
+    "name": "System : Contractor Mgmt",
+    "size": 5021,
+    "imports": ["System : MyEHS", 
+                "System : Internal Custom"]
+  },
+  {
+    "name": "System : GRID",
+    "size": 5022,
+    "imports": []
+  },
+  {
+    "name": "System : Seeq",
+    "size": 5023,
+    "imports": []
+  },
+  {
+    "name": "System : File EHSS Sharepoint",
+    "size": 5024,
+    "imports": []
+  },
+  {
+    "name": "System : External OSHA",
+    "size": 5025,
+    "imports": []
+  },
+  {
+    "name": "System : External ASTM",
+    "size": 5026,
+    "imports": []
+  },
+  {
+    "name": "System : Internal Custom",
+    "size": 5027,
+    "imports": []
+  },
+  {
+    "name": "System : Zurich",
+    "size": 5028,
+    "imports": []
+  },
+  {
+    "name": "System : Aetna",
+    "size": 5029,
+    "imports": []
+  },
+  {
+    "name": "KPI : ASTM",
+    "size": 5030,
+    "imports": ["FACT : Global Health Data", 
+                "FACT : Global Safety Data"
+    ]
+  }
+
+]

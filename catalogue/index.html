@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>Tesla | EHSS Data Model | CATALOGUE</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Hierarchical Edge Bundling for data model representation">
+    <meta name="template version" content="20220401.01">
+    <meta name="author" content="bcarpena@tesla.com">
+</head>
+<meta charset="utf-8">
+<style>
+    .node {
+        font: 300 11px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        fill: #bbb;
+        
+    }
+
+    .node:hover {
+        fill: #000;
+    }
+
+    .link {
+        stroke: steelblue;
+        stroke-opacity: .4;
+        fill: none;
+        pointer-events: none;
+    }
+
+    .node:hover,
+    .node--source,
+    .node--target {
+        font-weight: 700;
+    }
+
+    .node--source {
+        fill: #2ca02c;
+    }
+
+    .node--target {
+        fill: #d62728;
+    }
+
+    .link--source,
+    .link--target {
+        stroke-opacity: 1;
+        stroke-width: 2px;
+    }
+
+    .link--source {
+        stroke: #d62728;
+    }
+
+    .link--target {
+        stroke: #2ca02c;
+    }
+    h2
+    {
+        padding-left: 5px;
+        font-family: Gotham, Arial, Helvetica, sans-serif;
+        color: #646664;
+        font-size: 20px;
+    }
+    h4
+    {
+        font-family: Gotham Light, Gotham, Helvetica, Arial, sans-serif;
+        color: #646664;
+        font-size: 12px;
+        padding-left: 20px;
+    }
+    h6
+    {
+        font-family: Gotham Light, Gotham, Helvetica, Arial, sans-serif;
+        color: #646664;
+        font-size: 12px;
+    }
+    .listed,.intro,.main{
+        float:right;
+        top: 22px;
+        left: 1%;
+        position: absolute;
+        width:18.828391%;
+        font-family: Gotham Light, Gotham, Helvetica, Arial, sans-serif;
+        color: #191a19;
+        font-size: 12px;
+        padding-left: 20px;
+        }
+    .listed{margin-top:117px}
+    .listed div{line-height:1.4}
+
+</style>
+
+<body>
+    <h2><div title="Data models are visual representations of an enterprise's data elements and the connections between them.">EHSS Data Products & Services Catalogue </div></h2>
+    <h4>Data Model Version: 20220502.08</h4>
+    <h4>Instructions: Hover over each text (nodes) to view their integrations</h4>
+    
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script>
+
+        var diameter = 888,
+            radius = diameter / 2,
+            innerRadius = radius - 180;
+
+        var cluster = d3.layout.cluster()
+            .size([180, innerRadius])
+            .sort(null)
+            .value(function (d) { return d.size; });
+
+        var bundle = d3.layout.bundle();
+
+        var line = d3.svg.line.radial()
+            .interpolate("bundle")
+            .tension(.85)
+            .radius(function (d) { return d.y; })
+            .angle(function (d) { return d.x / 180 * Math.PI; });
+
+        var svg = d3.select("body").append("svg")
+            .attr("width", diameter)
+            .attr("height", diameter)
+            .append("g")
+            .attr("transform", "translate(" + radius + "," + radius + ")");
+
+        var link = svg.append("g").selectAll(".link"),
+            node = svg.append("g").selectAll(".node");
+
+        d3.json("tesseract.json", function (error, classes) {
+            if (error) throw error;
+
+            var nodes = cluster.nodes(packageHierarchy(classes)),
+                links = packageImports(nodes);
+
+            link = link
+                .data(bundle(links))
+                .enter().append("path")
+                .each(function (d) { d.source = d[0], d.target = d[d.length - 1]; })
+                .attr("class", "link")
+                .attr("d", line);
+
+            node = node
+                .data(nodes.filter(function (n) { return !n.children; }))
+                .enter().append("text")
+                .attr("class", "node")
+                .attr("dy", ".31em")
+                .attr("transform", function (d) { return "rotate(" + (d.x - 90) + ")translate(" + (d.y + 8) + ",0)" + (d.x < 180 ? "" : "rotate(180)"); })
+                .style("text-anchor", function (d) { return d.x < 180 ? "start" : "end"; })
+                .text(function (d) { return d.key; })
+                .on("mouseover", mouseovered)
+                .on("mouseout", mouseouted);
+        });
+
+        function mouseovered(d) {
+            node
+                .each(function (n) { n.target = n.source = false; });
+
+            link
+                .classed("link--target", function (l) { if (l.target === d) return l.source.source = true; })
+                .classed("link--source", function (l) { if (l.source === d) return l.target.target = true; })
+                .filter(function (l) { return l.target === d || l.source === d; })
+                .each(function () { this.parentNode.appendChild(this); });
+
+            node
+                .classed("node--target", function (n) { return n.target; })
+                .classed("node--source", function (n) { return n.source; });
+        }
+
+        function mouseouted(d) {
+            link
+                .classed("link--target", false)
+                .classed("link--source", false);
+
+            node
+                .classed("node--target", false)
+                .classed("node--source", false);
+        }
+
+        d3.select(self.frameElement).style("height", diameter + "px");
+
+        // Render Data Model
+        function packageHierarchy(classes) {
+            var map = {};
+
+            function find(name, data) {
+                var node = map[name], i;
+                if (!node) {
+                    node = map[name] = data || { name: name, children: [] };
+                    if (name.length) {
+                        node.parent = find(name.substring(0, i = name.lastIndexOf(".")));
+                        node.parent.children.push(node);
+                        node.key = name.substring(i + 1);
+                    }
+                }
+                return node;
+            }
+
+            classes.forEach(function (d) {
+                find(d.name, d);
+            });
+
+            return map[""];
+        }
+
+        // Return a list of imports for the given array of nodes.
+        function packageImports(nodes) {
+            var map = {},
+                imports = [];
+
+            // Compute a map from name to node.
+            nodes.forEach(function (d) {
+                map[d.name] = d;
+            });
+
+            // For each import, construct a link from the source to target node.
+            nodes.forEach(function (d) {
+                if (d.imports) d.imports.forEach(function (i) {
+                    imports.push({ source: map[d.name], target: map[i] });
+                });
+            });
+
+            return imports;
+        }
+
+    </script>
+    
+
+    <div class="listed">
+        <b>[ Quick List: EHSS Data Product and Services Catalogue ]</b><br />
+        <br />
+        PRODUCT : Executive Dashboard<br />
+        PRODUCT : Actions Dashboard<br />
+        PRODUCT : Injury Dashboard<br />
+        PRODUCT : Infectious Diseases Dashboard<br />
+        PRODUCT : Inspections Dashboard<br />
+        PRODUCT : Take Charge Dashboard<br />
+        PRODUCT : Domain Model**<br />
+        PRODUCT : DATA MODELS (Agamotto Algorithms)**<br />
+        PRODUCT : SCADA Dashboard**<br />
+        PRODUCT : Air Quality Index Dashboard**<br />
+        PRODUCT : WEWO Dashboard*<br />
+        PRODUCT : CA SSD Regulated Waste Dashboard*<br />
+        PRODUCT : Circular Solutions Dashboard**<br />
+        PRODUCT : Contractor Dashboard*<br />
+        PRODUCT : Security Dashboard*<br />
+        PRODUCT : Environmental Dashboard**<br /><br />
+
+        Platform : EHSS Data Lake**<br />
+        Platform : EHSS General Purpose Database**<br />
+        Platform : PowerBI<br />
+        Platform : Data Factory**<br /><br />
+
+        FACT : ASTM<br />
+        FACT : TRIR<br />
+        FACT : DART<br />
+        FACT : LTIR<br />
+        FACT : High Severity Injuries<br />
+        FACT : High Priority Actions<br />
+        FACT : Action Closure Rate<br />
+        FACT : Take Charge<br />
+        FACT : Take Charge submissions<br />
+        FACT : Take Charge closure rates<br />
+        FACT : COVID infections<br />
+        FACT : Expected Back But Not Returned<br />
+        FACT : Inspection submissions<br />
+        FACT : Inspection compliance<br />
+        FACT : Environmental Scope 1 and 2<br />
+        FACT : Electricity Consumption<br />
+        FACT : Water Consumption<br />
+        FACT : Fuel Consumption<br />
+        FACT : Domain Models and reference data<br />
+        FACT : SCADA and Industrial Data<br />
+        FACT : Tags inventory<br />
+        FACT : Emissions data<br />
+        FACT : CA Waste Count<br />
+        FACT : Circular Solutions Metrics<br />
+        FACT : Domain Models and reference data<br />
+        FACT : Air Quality per location<br />
+        FACT : Water Energy<br />
+        FACT : Training<br />
+        FACT : Weekly Safety Shares<br />
+        FACT : Maps of Projects<br />
+        FACT : Security Incidents<br />
+        FACT : Security Incidents per location<br />
+        FACT : Security Incidents per type<br />
+
+
+        <br />
+        <br />
+        <br />
+        <b>=== Legend ===</b><br />
+        * Public Preview (Beta version) <br />
+        ** In-progress
+
+    </div>
+
+    <h6><br /><br /><br /><br /><br />Data models are visual representations of an enterprise's data elements and the connections between them.</h6>
+   </body>
+   </html>

@@ -1,0 +1,27 @@
+#!/bin/sh
+# @bencarpena 20220509
+# What : Validate and check for nodes in tesseract.json
+
+cat tesseract.json | grep -F '"name": "FACT: Injury/Illness Events"' | echo "Node Search --> FACT: Injury/Illness Events = `wc -l`"
+cat tesseract.json | grep -F '"name": "FACT: Headcount"' | echo "Node Search --> FACT: Headcount = `wc -l`"
+cat tesseract.json | grep -F '"name": "FACT: Work Hours"' | echo "Node Search --> FACT: Work Hours = `wc -l`"
+cat tesseract.json | grep -F '"name": "KPI: OSHA Rates"' | echo "Node Search --> KPI: OSHA Rates = `wc -l`"
+cat tesseract.json | grep -F '"name": "KPI: ASTM"' | echo "Node Search --> KPI: ASTM = `wc -l`"
+cat tesseract.json | grep -F '"name": "Table :Table: Kronos_Paycode_Hours_History"' | echo "Node Search --> Table :Table: Kronos_Paycode_Hours_History = `wc -l`"
+cat tesseract.json | grep -F '"name": "Table: dim_InjuryIllness"' | echo "Node Search --> Table: dim_InjuryIllness = `wc -l`"
+cat tesseract.json | grep -F '"name": "Table: Dim_EmployeeNonSensitive"' | echo "Node Search --> Table: Dim_EmployeeNonSensitive = `wc -l`"
+cat tesseract.json | grep -F '"name": "Table: dimTRTstore"' | echo "Node Search --> Table: dimTRTstore = `wc -l`"
+cat tesseract.json | grep -F '"name": "Table: Tesla_DWH.FPA.DimCostCenter"' | echo "Node Search --> Table: Tesla_DWH.FPA.DimCostCenter = `wc -l`"
+cat tesseract.json | grep -F '"name": "Table: SiteHandSCase"' | echo "Node Search --> Table: SiteHandSCase = `wc -l`"
+cat tesseract.json | grep -F '"name": "System: MyEHS"' | echo "Node Search --> System: MyEHS = `wc -l`"
+cat tesseract.json | grep -F '"name": "System: Gensuite"' | echo "Node Search --> System: Gensuite = `wc -l`"
+cat tesseract.json | grep -F '"name": "System: HROS"' | echo "Node Search --> System: HROS = `wc -l`"
+cat tesseract.json | grep -F '"name": "System: Kronos"' | echo "Node Search --> System: Kronos = `wc -l`"
+cat tesseract.json | grep -F '"name": "System: Finance Masters"' | echo "Node Search --> System: Finance Masters = `wc -l`"
+cat tesseract.json | grep -F '"name": "System: TRT"' | echo "Node Search --> System: TRT = `wc -l`"
+cat tesseract.json | grep -F '"name": "Server: utopia"' | echo "Node Search --> Server: utopia = `wc -l`"
+cat tesseract.json | grep -F '"name": "Server: edw"' | echo "Node Search --> Server: edw = `wc -l`"
+cat tesseract.json | grep -F '"name": "Server: sp"' | echo "Node Search --> Server: sp = `wc -l`"
+cat tesseract.json | grep -F '"name": "Mapping: OSHA Mapping"' | echo "Node Search --> Mapping: OSHA Mapping = `wc -l`"
+cat tesseract.json | grep -F '"name": "Mapping: Hours Allocation"' | echo "Node Search --> Mapping: Hours Allocation = `wc -l`"
+cat tesseract.json | grep -F '"name": "Mapping: Remote Mapping"' | echo "Node Search --> Mapping: Remote Mapping = `wc -l`"

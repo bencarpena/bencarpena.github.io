@@ -1,0 +1,784 @@
+[
+  
+  {
+    "name": "Platform : EHSS Data Lake**",
+    "size": 8000,
+    "imports": [
+                "Audience : Select EHSS Audiences",
+                "Category : EHSS Enabling Platforms",
+                "Category : EHSS Data Services",
+                "Category : EHSS Data Product",
+                "FACT : ASTM",
+                "FACT : TRIR",
+                "FACT : DART",
+                "FACT : LTIR",
+                "FACT : High Severity Injuries",
+                "FACT : High Priority Actions",
+                "FACT : Action Closure Rate",
+                "FACT : Take Charge",
+                "FACT : Take Charge submissions",
+                "FACT : Take Charge closure rates",
+                "FACT : COVID infections",
+                "FACT : Expected Back But Not Returned",
+                "FACT : Inspection submissions",
+                "FACT : Inspection compliance",
+                "FACT : Environmental Scope 1 and 2",
+                "FACT : Electricity Consumption",
+                "FACT : Water Consumption",
+                "FACT : Fuel Consumption",
+                "FACT : Domain Models and reference data",
+                "FACT : SCADA and Industrial Data",
+                "FACT : Tags inventory",
+                "FACT : Emissions data",
+                "FACT : CA Waste Count",
+                "FACT : Circular Solutions Metrics",
+                "FACT : Domain Models and reference data",
+                "FACT : Air Quality per location",
+                "FACT : Water Energy",
+                "FACT : Waste Optimization"
+
+    ]
+  },
+  {
+    "name": "Platform : EHSS General Purpose Database**",
+    "size": 8001,
+    "imports": [
+                "Audience : Select EHSS Audiences",
+                "Category : EHSS Enabling Platforms",
+                "Category : EHSS Data Services",
+                "Category : EHSS Data Product",
+                "FACT : ASTM",
+                "FACT : TRIR",
+                "FACT : DART",
+                "FACT : LTIR",
+                "FACT : High Severity Injuries",
+                "FACT : High Priority Actions",
+                "FACT : Action Closure Rate",
+                "FACT : Take Charge",
+                "FACT : Take Charge submissions",
+                "FACT : Take Charge closure rates",
+                "FACT : COVID infections",
+                "FACT : Expected Back But Not Returned",
+                "FACT : Inspection submissions",
+                "FACT : Inspection compliance",
+                "FACT : Environmental Scope 1 and 2",
+                "FACT : Electricity Consumption",
+                "FACT : Water Consumption",
+                "FACT : Fuel Consumption",
+                "FACT : Domain Models and reference data",
+                "FACT : SCADA and Industrial Data",
+                "FACT : Tags inventory",
+                "FACT : Emissions data",
+                "FACT : CA Waste Count",
+                "FACT : Circular Solutions Metrics",
+                "FACT : Domain Models and reference data",
+                "FACT : Air Quality per location",
+                "FACT : Water Energy",
+                "FACT : Waste Optimization"
+              ]
+  },
+  {
+    "name": "Platform : PowerBI",
+    "size": 8002,
+    "imports": [
+                  "Audience : All Tesla Employees and Contractors",
+                  "Audience : All Tesla EHSS Employees and Contractors",
+                  "Audience : Select EHSS Audiences",
+                  "Category : EHSS Enabling Platforms",
+                  "Category : EHSS Data Services",
+                  "Category : EHSS Data Product",
+                  "PRODUCT : Executive Dashboard",
+                  "PRODUCT : Actions Dashboard",
+                  "PRODUCT : Injury Dashboard",
+                  "PRODUCT : Inspections Dashboard",
+                  "PRODUCT : Take Charge Dashboard",
+                  "PRODUCT : Domain Model**",
+                  "PRODUCT : DATA MODELS (Agamotto Algorithms)**",
+                  "PRODUCT : SCADA Dashboard**",
+                  "PRODUCT : Air Quality Index Dashboard**",
+                  "PRODUCT : WEWO Dashboard*",
+                  "PRODUCT : CA SSD Regulated Waste Dashboard*",
+                  "PRODUCT : Circular Solutions Dashboard**",
+                  "PRODUCT : Environmental Dashboard**",
+                  "PRODUCT : Contractor Dashboard*",
+                  "FACT : ASTM",
+                  "FACT : TRIR",
+                  "FACT : DART",
+                  "FACT : LTIR",
+                  "FACT : High Severity Injuries",
+                  "FACT : High Priority Actions",
+                  "FACT : Action Closure Rate",
+                  "FACT : Take Charge",
+                  "FACT : Take Charge submissions",
+                  "FACT : Take Charge closure rates",
+                  "FACT : Inspection submissions",
+                  "FACT : Inspection compliance",
+                  "FACT : Environmental Scope 1 and 2",
+                  "FACT : Electricity Consumption",
+                  "FACT : Water Consumption",
+                  "FACT : Fuel Consumption",
+                  "FACT : Domain Models and reference data",
+                  "FACT : SCADA and Industrial Data",
+                  "FACT : Tags inventory",
+                  "FACT : Emissions data",
+                  "FACT : CA Waste Count",
+                  "FACT : Circular Solutions Metrics",
+                  "FACT : Domain Models and reference data",
+                  "FACT : Air Quality per location",
+                  "FACT : Water Energy",
+                  "FACT : Waste Optimization",
+                  "FACT : Security Incidents",
+                  "FACT : Security Incident per location",
+                  "FACT : Security Incident per type",
+                  "FACT : Training",
+                  "FACT : Maps of Projects",
+                  "FACT : Weekly Safety Shares"
+
+    ]
+  },
+  { 
+    "name": "Platform : Data Factory**", 
+    "size": 8003, 
+    "imports": [
+                  "Audience : Select EHSS Audiences",
+                  "Category : EHSS Enabling Platforms",
+                  "Category : EHSS Data Services",
+                  "Category : EHSS Data Product",
+                  "FACT : ASTM",
+                  "FACT : TRIR",
+                  "FACT : DART",
+                  "FACT : LTIR",
+                  "FACT : High Severity Injuries",
+                  "FACT : High Priority Actions",
+                  "FACT : Action Closure Rate",
+                  "FACT : Take Charge",
+                  "FACT : Take Charge submissions",
+                  "FACT : Take Charge closure rates",
+                  "FACT : COVID infections",
+                  "FACT : Expected Back But Not Returned",
+                  "FACT : Inspection submissions",
+                  "FACT : Inspection compliance",
+                  "FACT : Environmental Scope 1 and 2",
+                  "FACT : Electricity Consumption",
+                  "FACT : Water Consumption",
+                  "FACT : Fuel Consumption",
+                  "FACT : Domain Models and reference data",
+                  "FACT : SCADA and Industrial Data",
+                  "FACT : Tags inventory",
+                  "FACT : Emissions data",
+                  "FACT : CA Waste Count",
+                  "FACT : Circular Solutions Metrics",
+                  "FACT : Domain Models and reference data",
+                  "FACT : Air Quality per location",
+                  "FACT : Water Energy",
+                  "FACT : Waste Optimization",
+                  "FACT : Training",
+                  "FACT : Maps of Projects",
+                  "FACT : Weekly Safety Shares"
+    ] 
+  },
+  { 
+    "name": "Category : EHSS Metrics and KPIs", 
+    "size": 8004, 
+    "imports": [
+                "FACT : ASTM",
+                "FACT : TRIR",
+                "FACT : DART",
+                "FACT : LTIR",
+                "FACT : High Severity Injuries",
+                "FACT : High Priority Actions",
+                "FACT : Action Closure Rate",
+                "FACT : Take Charge",
+                "FACT : Take Charge submissions",
+                "FACT : Take Charge closure rates",
+                "FACT : COVID infections",
+                "FACT : Expected Back But Not Returned",
+                "FACT : Inspection submissions",
+                "FACT : Inspection compliance",
+                "FACT : Environmental Scope 1 and 2",
+                "FACT : Electricity Consumption",
+                "FACT : Water Consumption",
+                "FACT : Fuel Consumption",
+                "FACT : Domain Models and reference data",
+                "FACT : SCADA and Industrial Data",
+                "FACT : Tags inventory",
+                "FACT : Emissions data",
+                "FACT : CA Waste Count",
+                "FACT : Circular Solutions Metrics",
+                "FACT : Domain Models and reference data",
+                "FACT : Air Quality per location",
+                "FACT : Water Energy",
+                "FACT : Waste Optimization"
+
+    ] 
+  },
+  {
+    "name": "PRODUCT : Executive Dashboard",
+    "size": 8005,
+    "imports": [
+                "Audience : All Tesla Employees and Contractors",
+                "Category : EHSS Metrics and KPIs",
+                "FACT : ASTM",
+                "FACT : High Severity Injuries",
+                "FACT : High Priority Actions",
+                "FACT : Action Closure Rate",
+                "FACT : Take Charge",
+                "FACT : Take Charge submissions",
+                "FACT : Take Charge closure rates",
+                "FACT : Environmental Scope 1 and 2",
+                "FACT : Electricity Consumption",
+                "FACT : Water Consumption",
+                "FACT : Fuel Consumption",
+                "FACT : Emissions data",
+                "FACT : Domain Models and reference data",
+                "Category : EHSS Data Product"
+    ]
+  },
+  {
+    "name": "PRODUCT : Actions Dashboard",
+    "size": 8006,
+    "imports": [
+                "FACT : High Priority Actions",
+                "FACT : Action Closure Rate",
+                "Audience : All Tesla EHSS Employees and Contractors",
+                "Audience : Select Tesla Audiences",
+                "Category : EHSS Metrics and KPIs",
+                "FACT : Domain Models and reference data"
+
+    ]
+  },
+  {
+    "name": "PRODUCT : Injury Dashboard",
+    "size": 8007,
+    "imports": [
+                "FACT : ASTM",
+                "FACT : TRIR",
+                "FACT : DART",
+                "FACT : LTIR",
+                "FACT : High Severity Injuries",
+                "Audience : All Tesla EHSS Employees and Contractors",
+                "Audience : Select Tesla Audiences",
+                "Category : EHSS Metrics and KPIs",
+                "FACT : Domain Models and reference data"
+    ]
+  },
+  {
+    "name": "PRODUCT : Infectious Diseases Dashboard",
+    "size": 8007,
+    "imports": [
+                "FACT : COVID infections",
+                "FACT : Expected Back But Not Returned",
+                "Audience : Select Tesla Audiences",
+                "Audience : Select EHSS Audiences",
+                "Category : EHSS Metrics and KPIs",
+                "FACT : Domain Models and reference data"
+    ]
+  },
+  {
+    "name": "PRODUCT : Domain Model**",
+    "size": 8008,
+    "imports": [
+                "Category : EHSS Data Services",
+                "Category : EHSS Data Product",
+                "Audience : Select Tesla Audiences",
+                "FACT : Domain Models and reference data"
+    ]
+  },
+  {
+    "name": "PRODUCT : DATA MODELS (Agamotto Algorithms)**",
+    "size": 8009,
+    "imports": [
+                "Category : EHSS Data Services",
+                "Audience : Select EHSS Audiences",
+                "FACT : High Severity Injuries",
+                "FACT : ASTM",
+                "FACT : Take Charge",
+                "FACT : Domain Models and reference data"
+    ]
+  },
+  {
+    "name": "PRODUCT : SCADA Dashboard**",
+    "size": 8010,
+    "imports": [
+                "Category : EHSS Metrics and KPIs",
+                "FACT : SCADA and Industrial Data",
+                "FACT : Tags inventory",
+                "FACT : Emissions data",
+                "Audience : All Tesla EHSS Employees and Contractors",
+                "FACT : Domain Models and reference data"
+    ]
+  },
+  {
+    "name": "PRODUCT : Air Quality Index Dashboard**",
+    "size": 8011,
+    "imports": [
+                "Audience : All Tesla Employees and Contractors",
+                "Category : EHSS Metrics and KPIs",
+                "Category : EHSS Data Product",
+                "FACT : Air Quality per location",
+                "FACT : Domain Models and reference data"
+    ]
+  },
+  {
+    "name": "PRODUCT : WEWO Dashboard*",
+    "size": 8012,
+    "imports": [
+                "Audience : Select EHSS Audiences",
+                "Category : EHSS Metrics and KPIs",
+                "Category : EHSS Data Product",
+                "FACT : Water Energy",
+                "FACT : Waste Optimization",
+                "FACT : Domain Models and reference data"
+    ]
+  },
+  {
+    "name": "PRODUCT : CA SSD Regulated Waste Dashboard*",
+    "size": 8013,
+    "imports": [
+                "Audience : Select EHSS Audiences",
+                "Category : EHSS Metrics and KPIs",
+                "Category : EHSS Data Product",
+                "FACT : Domain Models and reference data",
+                "FACT : CA Waste Count",
+                "FACT : Circular Solutions Metrics"
+
+    ]
+  },
+  {
+    "name": "PRODUCT : Inspections Dashboard",
+    "size": 8014,
+    "imports": [
+                "FACT : Inspection submissions",
+                "FACT : Inspection compliance",
+                "Audience : All Tesla EHSS Employees and Contractors",
+                "Category : EHSS Metrics and KPIs",
+                "FACT : Domain Models and reference data"
+    ]
+  },
+  {
+    "name": "PRODUCT : Take Charge Dashboard",
+    "size": 8015,
+    "imports": [
+              "FACT : Take Charge",
+              "FACT : Take Charge submissions",
+              "FACT : Take Charge closure rates",
+              "Audience : All Tesla Employees and Contractors",
+              "Category : EHSS Metrics and KPIs",
+              "FACT : Domain Models and reference data"
+    ]
+  },
+  {
+    "name": "PRODUCT : Circular Solutions Dashboard**",
+    "size": 8016,
+    "imports": [
+                "Audience : Select EHSS Audiences",
+                "Category : EHSS Metrics and KPIs",
+                "Category : EHSS Data Product",
+                "FACT : Domain Models and reference data",
+                "FACT : Circular Solutions Metrics"
+    ]
+  },
+  {
+    "name": "PRODUCT : Environmental Dashboard**",
+    "size": 8018,
+    "imports": [
+                  "Audience : All Tesla EHSS Employees and Contractors",
+                  "Category : EHSS Metrics and KPIs",
+                  "Category : EHSS Data Product",
+                  "FACT : Domain Models and reference data",
+                  "FACT : Inspection submissions",
+                  "FACT : Inspection compliance",
+                  "FACT : Environmental Scope 1 and 2",
+                  "FACT : Electricity Consumption",
+                  "FACT : Water Consumption",
+                  "FACT : Fuel Consumption",
+                  "FACT : Circular Solutions Metrics"
+    ]
+  },
+
+  {
+    "name": "PRODUCT : Contractor Dashboard*",
+    "size": 8100,
+    "imports": [
+                "FACT : Training",
+                "FACT : Maps of Projects",
+                "FACT : Weekly Safety Shares",
+                "FACT : Action Closure Rate",
+                "FACT : Inspection submissions",
+                "FACT : Inspection compliance",
+                "Audience : All Tesla EHSS Employees and Contractors",
+                "Category : EHSS Metrics and KPIs",
+                "Category : EHSS Data Product"
+    ]
+  },
+  {
+    "name": "PRODUCT : Security Dashboard*",
+    "size": 8200,
+    "imports": [
+                "FACT : Security Incidents",
+                "FACT : Security Incident per location",
+                "FACT : Security Incident per type",
+                "Category : EHSS Metrics and KPIs",
+                "Category : EHSS Data Product",
+                "Audience : Select Tesla Audiences",
+                "Audience : Select EHSS Audiences"
+    ]
+  },
+  {
+    "name": "Category : EHSS Parent Security Group",
+    "size": 8017,
+    "imports": [
+                "Security Group : EHSS-Global-Employees",
+                "Security Group : EHSS-All-Tesla-Employees",
+                "Security Group : EHSS-Global-DataEngineering",
+                "Security Group : EHSS-Global-Select-Employees",
+                "Security Group : EHSS-Global-Tesla-Leaders"
+    ]
+  },
+  {
+    "name": "Category : EHSS Child Security Groups",
+    "size": 8019,
+    "imports": [
+                "Security Group : EHSS-EU-DataEngineering",
+                "Security Group : EHSS-US-DataEngineering",
+                "Security Group : EHSS-CN-DataEngineering",
+                "Security Group : EHSS-Include-DataEngineering",
+                "Security Group : EHSS-CN-Select-Employees",
+                "Security Group : EHSS-EU-Select-Employees",
+                "Security Group : EHSS-Include-Select-Employees"
+
+    ]
+  },
+  {
+    "name": "Category : EHSS Enabling Platforms",
+    "size": 8020,
+    "imports": [
+                "Platform : EHSS Data Lake**",
+                "Platform : EHSS General Purpose Database**",
+                "Platform : PowerBI",
+                "Platform : Data Factory**"
+
+    ]
+  },
+  {
+    "name": "Category : EHSS Data Services",
+    "size": 8021,
+    "imports": [
+                "PRODUCT : Domain Model**",
+                "PRODUCT : DATA MODELS (Agamotto Algorithms)**"
+
+    ]
+  },
+  {
+    "name": "Category : EHSS Data Product",
+    "size": 8022,
+    "imports": [
+                "PRODUCT : Executive Dashboard",
+                "PRODUCT : Actions Dashboard",
+                "PRODUCT : Injury Dashboard",
+                "PRODUCT : Infectious Diseases Dashboard",
+                "PRODUCT : Inspections Dashboard",
+                "PRODUCT : Take Charge Dashboard",
+                "PRODUCT : Domain Model**",
+                "PRODUCT : DATA MODELS (Agamotto Algorithms)**",
+                "PRODUCT : SCADA Dashboard**",
+                "PRODUCT : Air Quality Index Dashboard**",
+                "PRODUCT : WEWO Dashboard*",
+                "PRODUCT : CA SSD Regulated Waste Dashboard*",
+                "PRODUCT : Circular Solutions Dashboard**",
+                "PRODUCT : Environmental Dashboard**"
+    ]
+  },
+  
+  {
+    "name": "FACT : ASTM",
+    "size": 8038,
+    "imports": []
+  },
+  {
+    "name": "FACT : TRIR",
+    "size": 8039,
+    "imports": []
+  },
+  {
+    "name": "FACT : DART",
+    "size": 8040,
+    "imports": []
+  },
+  {
+    "name": "FACT : LTIR",
+    "size": 8041,
+    "imports": []
+  },
+  {
+    "name": "FACT : High Priority Actions",
+    "size": 8042,
+    "imports": []
+  },
+  {
+    "name": "FACT : Action Closure Rate",
+    "size": 8043,
+    "imports": []
+  },
+  {
+    "name": "FACT : Take Charge",
+    "size": 8044,
+    "imports": []
+  },
+  {
+    "name": "FACT : Take Charge submissions",
+    "size": 8045,
+    "imports": []
+  },
+  {
+    "name": "FACT : Take Charge closure rates",
+    "size": 8046,
+    "imports": []
+  },
+  {
+    "name": "FACT : COVID infections",
+    "size": 8047,
+    "imports": []
+  },
+  {
+    "name": "FACT : Expected Back But Not Returned",
+    "size": 8048,
+    "imports": []
+  },
+  {
+    "name": "FACT : Inspection submissions",
+    "size": 8049,
+    "imports": []
+  },
+  {
+    "name": "FACT : Inspection compliance",
+    "size": 8050,
+    "imports": []
+  },
+  {
+    "name": "FACT : Environmental Scope 1 and 2",
+    "size": 8051,
+    "imports": []
+  },
+  {
+    "name": "FACT : Electricity Consumption",
+    "size": 8052,
+    "imports": []
+  },
+  {
+    "name": "FACT : Water Consumption",
+    "size": 8053,
+    "imports": []
+  },
+  {
+    "name": "FACT : Fuel Consumption",
+    "size": 8054,
+    "imports": []
+  },
+  {
+    "name": "FACT : Domain Models and reference data",
+    "size": 8055,
+    "imports": []
+  },
+  {
+    "name": "FACT : SCADA and Industrial Data",
+    "size": 8056,
+    "imports": []
+  },
+  {
+    "name": "FACT : Tags inventory",
+    "size": 8057,
+    "imports": []
+  },
+  {
+    "name": "FACT : CA Waste Count",
+    "size": 8058,
+    "imports": []
+  },
+  {
+    "name": "FACT : Emissions data",
+    "size": 8059,
+    "imports": []
+  },
+  {
+    "name": "FACT : Circular Solutions Metrics",
+    "size": 8060,
+    "imports": []
+  },
+  {
+    "name": "FACT : Domain Models and reference data",
+    "size": 8061,
+    "imports": []
+  },
+  {
+    "name": "FACT : Air Quality per location",
+    "size": 8062,
+    "imports": []
+  },
+  {
+    "name": "FACT : Water Energy",
+    "size": 8063,
+    "imports": []
+  },
+
+  {
+    "name": "FACT : Waste Optimization",
+    "size": 8064,
+    "imports": []
+  },
+  {
+    "name": "FACT : High Severity Injuries",
+    "size": 8065,
+    "imports": []
+  },
+
+  {
+    "name": "FACT : Training",
+    "size": 8102,
+    "imports": []
+  },
+  {
+    "name": "FACT : Maps of Projects",
+    "size": 8103,
+    "imports": []
+  },
+  {
+    "name": "FACT : Weekly Safety Shares",
+    "size": 8104,
+    "imports": []
+  },
+  {
+    "name": "FACT : Security Incidents",
+    "size": 8201,
+    "imports": []
+  },
+  {
+    "name": "FACT : Security Incident per location",
+    "size": 8202,
+    "imports": []
+  },
+  {
+    "name": "FACT : Security Incident per type",
+    "size": 8203,
+    "imports": []
+  },
+
+  {
+    "name": "Security Group : EHSS-Global-Tesla-Leaders",
+    "size": 8066,
+    "imports": []
+  },
+  {
+    "name": "Audience : All Tesla Employees and Contractors",
+    "size": 8023,
+    "imports": [
+                "Security Group : EHSS-All-Tesla-Employees",
+                "Security Group : EHSS-Global-Tesla-Leaders"
+    ]
+  },
+  {
+    "name": "Audience : All Tesla EHSS Employees and Contractors",
+    "size": 8024,
+    "imports": ["Security Group : EHSS-Global-Employees"]
+  },
+  {
+    "name": "Audience : Select Tesla Audiences",
+    "size": 8025,
+    "imports": [
+                "Security Group : EHSS-Global-Select-Employees",
+                "Security Group : EHSS-CN-Select-Employees",
+                "Security Group : EHSS-EU-Select-Employees",
+                "Security Group : EHSS-Include-Select-Employees"
+    ]
+  },
+  {
+    "name": "Audience : Select EHSS Audiences",
+    "size": 8026,
+    "imports": [
+                "Security Group : EHSS-Global-DataEngineering",
+                "Security Group : EHSS-EU-DataEngineering",
+                "Security Group : EHSS-US-DataEngineering",
+                "Security Group : EHSS-CN-DataEngineering",
+                "Security Group : EHSS-Include-DataEngineering",
+                "Security Group : EHSS-Global-Select-Employees",
+                "Security Group : EHSS-CN-Select-Employees",
+                "Security Group : EHSS-EU-Select-Employees",
+                "Security Group : EHSS-Include-Select-Employees",
+                "Security Group : EHSS-Global-Tesla-Leaders"
+
+    ]
+  },
+  {
+    "name": "Security Group : EHSS-Global-Employees",
+    "size": 8027,
+    "imports": []
+  },
+  {
+    "name": "Security Group : EHSS-All-Tesla-Employees",
+    "size": 8028,
+    "imports": []
+  },
+  {
+    "name": "Security Group : EHSS-Global-DataEngineering",
+    "size": 8029,
+    "imports": [
+                "Security Group : EHSS-EU-DataEngineering",
+                "Security Group : EHSS-US-DataEngineering",
+                "Security Group : EHSS-CN-DataEngineering",
+                "Security Group : EHSS-Include-DataEngineering"
+    ]
+  },
+  {
+    "name": "Security Group : EHSS-Global-Select-Employees",
+    "size": 8030,
+    "imports": [
+                "Security Group : EHSS-CN-Select-Employees",
+                "Security Group : EHSS-EU-Select-Employees",
+                "Security Group : EHSS-Include-Select-Employees"
+    ]
+  },
+  {
+    "name": "Security Group : EHSS-EU-DataEngineering",
+    "size": 8031,
+    "imports": []
+  },
+  {
+    "name": "Security Group : EHSS-US-DataEngineering",
+    "size": 8032,
+    "imports": []
+  },
+  {
+    "name": "Security Group : EHSS-CN-DataEngineering",
+    "size": 8033,
+    "imports": []
+  },
+  {
+    "name": "Security Group : EHSS-Include-DataEngineering",
+    "size": 8034,
+    "imports": []
+  },
+  {
+    "name": "Security Group : EHSS-CN-Select-Employees",
+    "size": 8035,
+    "imports": []
+  },
+  {
+    "name": "Security Group : EHSS-EU-Select-Employees",
+    "size": 8036,
+    "imports": []
+  },
+  {
+    "name": "Security Group : EHSS-Include-Select-Employees",
+    "size": 8037,
+    "imports": []
+  },
+  {
+    "name": "Platform : ZipLabs",
+    "size": 4004,
+    "imports": [
+                "FACT : COVID infections",
+                "FACT : Expected Back But Not Returned",
+                "PRODUCT : Infectious Diseases Dashboard"
+    ]
+  }
+]

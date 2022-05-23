@@ -1,0 +1,34 @@
+[
+  {
+    "name": "APP : WEWO PM Tool",
+    "size": 5001,
+    "imports": [
+      "TABLE : WEWO",
+      "FUNCTION : app lookup library",
+      "TABLE : WEWO Emission Factor table",
+      "PowerBi : WEWO Dashboard"
+    ]
+  },
+  {
+    "name": "TABLE : WEWO",
+    "size": 5002,
+    "imports": []
+  },
+  { 
+    "name": "FUNCTION : app lookup library", 
+    "size": 5003, 
+    "imports": [] 
+  
+  },
+  {
+    "name": "TABLE : WEWO Emission Factor table",
+    "size": 5004,
+    "imports": []
+  },
+  {
+    "name": "PowerBi : WEWO Dashboard",
+    "size": 5005,
+    "imports": ["TABLE : WEWO"]
+  }
+
+]

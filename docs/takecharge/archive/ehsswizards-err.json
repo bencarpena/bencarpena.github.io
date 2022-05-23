@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Metric : TOTAL TC Submissions",
+      "size": 3938,
+      "imports": ["Table : Dim_EmployeeNonSensitive", "Table : Dim_TakeCharge", "Table : TRT Store"]
+    },
+    {
+      "name": "Table : Dim_TakeCharge",
+      "size": 3812,
+      "imports": ["Table : Dim_EmployeeNonSensitive", "Data Source : MyEHS", "Table : KronosHours"]
+    },
+    {
+      "name": "Server : EHSDM",
+      "size": 6714,
+      "imports": ["Table : Dim_TakeCharge", "Table : Dim_Incident", "Table : Dim_EmployeeNonSensitive"]
+    },
+    { 
+      "name": "Server : Utopia", 
+      "size": 743, 
+      "imports": ["Table : Dim_EmployeeNonSensitive", "Table : Dim_Incident", "Table : Dim_TakeCharge"] },
+    {
+      "name": "Table : Dim_EmployeeNonSensitive",
+      "size": 3534,
+      "imports": ["Data Source : MyEHS"]
+    },
+    {
+      "name": "Table : Dim_Incident",
+      "size": 5731,
+      "imports": ["Data Source : MyEHS"]
+    },
+    {
+      "name": "Data Source : MyEHS",
+      "size": 7840,
+      "imports": ["Table : Dim_TakeCharge", "Table : Dim_EmployeeNonSensitive", "Table : Dim_Incident"]
+    },
+    {
+      "name": "Table : Dim_TakeCharge",
+      "size": 5914,
+      "imports": ["Data Source : MyEHS"]
+    },
+    {
+      "name": "Table : KronosHours",
+      "size": 3416,
+      "imports": ["Data Source : EDW"]
+    },
+    {
+      "name": "Data Source : EDW",
+      "size": 3416,
+      "imports": ["Table : KronosHours", "Table : TRT Store"]
+    }
+  ]

@@ -1,0 +1,59 @@
+[
+  
+  {
+    "name": "Table : Dim_TakeCharge",
+    "size": 3002,
+    "imports": ["Table : Dim_EmployeeNonSensitive", "Data Source : MyEHS", "Table : KronosHours"]
+  },
+  {
+    "name": "Server : EHSDM",
+    "size": 3003,
+    "imports": ["Table : Dim_TakeCharge", "Table : Dim_Incident", "Table : Dim_EmployeeNonSensitive"]
+  },
+  {
+    "name": "FACT : TOTAL TC Submissions",
+    "size": 3001,
+    "imports": ["Table : Dim_EmployeeNonSensitive", 
+              "Table : Dim_TakeCharge", "Table : TRT Store", "Data Source : MyEHS"]
+  },
+  { 
+    "name": "Server : Utopia", 
+    "size": 3004, 
+    "imports": ["FACT : TOTAL TC Submissions"] },
+  {
+    "name": "Table : Dim_EmployeeNonSensitive",
+    "size": 3005,
+    "imports": ["Server : EHSDM"]
+  },
+  {
+    "name": "Table : Dim_Incident",
+    "size": 3006,
+    "imports": ["Server : EHSDM"]
+  },
+  
+  {
+    "name": "Data Source : MyEHS",
+    "size": 3007,
+    "imports": []
+  },
+  {
+    "name": "Table : KronosHours",
+    "size": 3008,
+    "imports": ["Server : EDW"]
+  },
+  {
+    "name": "Server : EDW",
+    "size": 3009,
+    "imports": ["Table : KronosHours", "Table : TRT Store"]
+  },
+  {
+    "name": "Table : TRT Store",
+    "size": 3010,
+    "imports": ["Server : EDW", "Column : TRT_ID"]
+  },
+  {
+    "name": "Column : TRT_ID",
+    "size": 3010,
+    "imports": []
+  }
+]

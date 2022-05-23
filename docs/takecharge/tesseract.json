@@ -1,0 +1,130 @@
+[
+  {
+    "name": "Table: dimTRTstore",
+    "size": 3001,
+    "imports": ["System: TRT", "Server: EDW"]
+  },
+  {
+    "name": "Table: TakeChargeHoursSummaryGlobal",
+    "size": 3002,
+    "imports": [
+      "Table: Dim_TakeCharge",
+      "System: myEHS",
+      "System: Kronos",
+      "Table: RPT_KronosHoursWeeklySummary",
+      "Server: Utopia"
+    ]
+  },
+  {
+    "name": "Table: DimCostCenter",
+    "size": 3003,
+    "imports": ["System: Finance Masters", "Server: EDW"]
+  },
+  {
+    "name": "Table: Dim_EmployeeNonSensitive",
+    "size": 3004,
+    "imports": ["System: HROS", "Server: Utopia"]
+  },
+  {
+    "name": "Table: Dim_TakeCharge",
+    "size": 3005,
+    "imports": ["System: myEHS", "Server: Utopia"]
+  },
+  {
+    "name": "Table: VW_Dim_TakeCharge",
+    "size": 3006,
+    "imports": [
+      "Table: Dim_TakeCharge",
+      "System: myEHS",
+      "System: TRT",
+      "Table: dimTRTStore",
+      "Table: Dim_EmployeeNonSensitive",
+      "Server: Utopia",
+      "System: HROS"
+    ]
+  },
+  {
+    "name": "Table: RPT_KronosHoursWeeklySummary",
+    "size": 3007,
+    "imports": ["System: Kronos"]
+  },
+  {
+    "name": "Server: Utopia",
+    "size": 3008,
+    "imports": ["System: HROS", "System: myEHS"]
+  },
+  {
+    "name": "Server: EDW",
+    "size": 3009,
+    "imports": ["System: TRT", "System: Finance Masters"]
+  },
+  {
+    "name": "FACT: Take Charge Rate",
+    "size": 3010,
+    "imports": [
+      "System: myEHS",
+      "System: Kronos",
+      "Table: TakeChargeHoursSummaryGlobal",
+      "Table: Dim_TakeCharge",
+      "Table: RPT_KronosHoursWeeklySummary"
+    ]
+  },
+  {
+    "name": "FACT: Take Charge Closure Rate",
+    "size": 3011,
+    "imports": ["System: myEHS", "Table: Dim_TakeCharge"]
+  },
+  {
+    "name": "FACT: Percent Unique Participation",
+    "size": 3012,
+    "imports": [
+      "System: HROS",
+      "System: myEHS",
+      "Table: Dim_TakeCharge",
+      "Table: Dim_EmployeeNonSensitive"
+    ]
+  },
+  {
+    "name": "FACT: Total Take Charges",
+    "size": 3013,
+    "imports": ["System: myEHS", "Table: Dim_TakeCharge"]
+  },
+  {
+    "name": "System: myEHS",
+    "size": 3014,
+    "imports": []
+  },
+  {
+    "name": "System: Kronos",
+    "size": 3015,
+    "imports": []
+  },
+  {
+    "name": "System: TRT",
+    "size": 3016,
+    "imports": []
+  },
+  {
+    "name": "System: HROS",
+    "size": 3017,
+    "imports": []
+  },
+  {
+    "name": "System: Finance Masters",
+    "size": 3018,
+    "imports": []
+  },
+  {
+    "name": "Power BI: Take Charge Dashboard",
+    "size": 3019,
+    "imports": [
+      "Table: TakeChargeHoursSummaryGlobal",
+      "Table: dimTRTStore",
+      "Table: VW_Dim_TakeCharge",
+      "Table: Dim_EmployeeNonSensitive",
+      "Table: DimCostCenter",
+      "Server: Utopia",
+      "Server: EDW"
+    ]
+  }
+]

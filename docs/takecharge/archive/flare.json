@@ -1,0 +1,46 @@
+[
+  {
+    "name": "TOTAL TC Submissions",
+    "size": 3938,
+    "imports": ["Server : EHSDM", "Yellow"]
+  },
+  {
+    "name": "Server : EHSDM",
+    "size": 3812,
+    "imports": ["Green"]
+  },
+  {
+    "name": "Yellow",
+    "size": 6714,
+    "imports": ["Server : EHSDM", "Violet", "Indigo"]
+  },
+  { 
+    "name": "Green", 
+    "size": 743, 
+    "imports": ["White"] },
+  {
+    "name": "Blue",
+    "size": 3534,
+    "imports": ["Yellow", "EHSS Data Lake"]
+  },
+  {
+    "name": "Indigo",
+    "size": 5731,
+    "imports": ["Green", "Server : EHSDM", "White"]
+  },
+  {
+    "name": "Violet",
+    "size": 7840,
+    "imports": ["TOTAL TC Submissions", "Blue"]
+  },
+  {
+    "name": "White",
+    "size": 5914,
+    "imports": []
+  },
+  {
+    "name": "EHSS Data Lake",
+    "size": 3416,
+    "imports": ["TOTAL TC Submissions", "Server : EHSDM", "Yellow", "Green", "Blue", "Indigo", "Violet"]
+  }
+]

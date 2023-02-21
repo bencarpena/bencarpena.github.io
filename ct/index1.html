@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<!-- load the d3.js library -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ramda/0.23.0/ramda.js"></script>
+
+<style>
+  .node {
+    cursor: pointer;
+
+    circle {
+      fill: #aae;
+      /* stroke: steelblue;*/
+      stroke-width: 2px;
+    }
+
+    text {
+      font: 12px sans-serif;
+      fill: #000;
+    }
+
+    rect {
+      fill: transparent;
+      stroke-width: 2px;
+      rx: 5px;
+      ry: 5px;
+    }
+  }
+
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+  }
+
+  .tree {
+    margin-bottom: 10px;
+    overflow: auto;
+  }
+
+  svg text {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+</style>
+
+<body>
+  <div id="tree"></div>
+
+
+  <script>
+
+    function buildHorizontalTree(treeData, treeContainerDom) {
+      var margin = { top: 40, right: 40, bottom: 20, left: 50 };
+      var width = 960 - margin.right - margin.left;
+      var height = 400 - margin.top - margin.bottom;
+
+      var i = 0, duration = 750;
+      var rect = { width: 140, height: 40, hDist: 60, rx: 5, ry: 5 };
+      var tree = d3.layout.tree()
+        .size([height, width]);
+      var diagonal = d3.svg.diagonal()
+        .source(function (d) {
+          return { x: d.source.x + rect.height / 2, y: d.source.y + rect.width };
+        })
+        .target(function (d) {
+          return { x: d.target.x + rect.height / 2, y: d.target.y };
+        })
+        .projection(function (d) {
+          return [d.y, d.x];
+        });
+
+      var svg = d3.select(treeContainerDom)
+        .append("svg")
+        .attr("width", width + margin.right + margin.left)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+      //Changes added for collapsing starts//
+      function collapse(d) {
+        if (d.children) {
+          d._children = d.children;
+          d._children.forEach(collapse);
+          d.children = null;
+        }
+      }
+
+      var root = treeData;
+
+      //Changes added for collapsing ends//
+      update(root);
+
+      function update(source) {
+        // Compute the new tree layout
+        var nodes = tree.nodes(root),
+          links = tree.links(nodes);
+        // Normalize for fixed-depth
+        nodes.forEach(function (d) {
+          d.y = d.depth * (rect.width + rect.hDist);
+          // console.log(d.x - 0);
+        });
+        // Declare the nodes…
+        var node = svg.selectAll("g.node")
+          .data(nodes, function (d) { return d.id || (d.id = ++i); });
+        // Enter the nodes
+        var nodeEnter = node.enter()
+          .append("g")
+          .attr("class", "node")
+          .attr("transform", function (d) {
+            return "translate(" + (source.y0 || 0) + "," + (source.x0 || 0) + ")";
+          })
+          .on("click", nodeclick);
+
+        nodeEnter.append("rect")
+          .attr("width", rect.width / 2)
+          .attr("height", rect.height / 2)
+          .attr("stroke", function (d) {
+            return d.children || d._children ? "steelblue" : "#00c13f";
+          })
+          .style("fill", function (d) {
+            return d.children || d._children ? "lightsteelblue" : "#fff";
+          });
+
+        nodeEnter.append("text")
+          .attr("y", function (d) {
+            return rect.height / 2;
+          })
+          .attr("dy", ".4em")
+          .attr("x", rect.width / 2)
+          .attr("text-anchor", "middle")
+          .text(function (d) { return d.name; })
+          .style("fill-opacity", 1e-6);
+
+        // Transition nodes to their new position
+        var nodeUpdate = node.transition()
+          .duration(duration)
+          .attr("transform", function (d) {
+            const x = d.x;
+            const y = d.y;
+            return `translate(${y},${x})`;
+          });
+
+        nodeUpdate.select("rect")
+          .attr("width", rect.width)
+          .attr("height", rect.height)
+          .style("fill", function (d) {
+            return d._children ? "lightsteelblue" : "#fff";
+          });
+
+        nodeUpdate.select("text")
+          .style("fill-opacity", 1);
+
+
+        // Transition exiting nodes to the parent's new position
+        var nodeExit = node.exit()
+          .transition()
+          .duration(duration)
+          .attr("transform", function (d) {
+            // console.log('removed id:', d.id);
+            const x = source.y + rect.width;
+            const y = source.x + rect.height / 2;
+            return `translate(${x},${y})`;
+          })
+          .remove();
+
+        // minify the rect to very small
+        nodeExit.select("rect")
+          .attr("width", 1e-6)
+          .attr("height", 1e-6);
+
+        nodeExit.select("text")
+          .style("fill-opacity", 1e-6);
+
+        // Update the links…
+        // Declare the links…
+        var link = svg.selectAll("path.link")
+          .data(links, function (d) { return d.target.id; });
+
+        // Enter the links
+        link.enter()
+          .insert("path", "g")
+          .attr("class", "link")
+          .attr("d", function (d) {
+            var x = source.x0 ? source.x0 - rect.height / 4 : 0;
+            var y = source.y0 ? source.y0 - rect.width : 0;
+            var s = { x, y: y };
+            var t = { x: (source.x0 || 0), y: (source.y0 || 0) };
+            return diagonal({ source: s, target: t });
+          });
+
+        // Transition links to their new position.
+        link.transition()
+          .duration(duration)
+          .attr("d", diagonal);
+
+        // Transition exiting nodes to the parent's new position.
+        link.exit()
+          .transition()
+          .duration(duration)
+          .attr("d", function (d) {
+            var src = { x: source.x, y: source.y };
+            var target = { x: source.x, y: source.y + rect.width };
+            return diagonal({ source: src, target: target });
+          })
+          .remove();
+
+        // Stash the old positions for transition.
+        nodes.forEach(function (d) {
+          d.x0 = d.x + rect.height / 4;
+          d.y0 = d.y + rect.width;
+        });
+      }
+
+
+      //Only children will be collpased
+      root.children.forEach(collapse);
+      // To collapse all to root element
+      collapse(root);
+
+      //Changes added for collapsing ends//
+      update(root);
+
+
+      // Toggle children on click.
+      function nodeclick(d) {
+        if (d.children) {
+          d._children = d.children;
+          d.children = null;
+        } else {
+          d.children = d._children;
+          d._children = null;
+        }
+        update(d);
+      }
+    } // BuildHorizontalTree
+
+    var treeData =
+    {
+      name: "Enterprise",
+      children: [
+        {
+          name: "IT Department",
+          children: [
+            {
+              name: "Team Lead 1",
+              children: [
+                {
+                  name: "Senior Dev 1",
+                  children: []
+                },
+                {
+                  name: "Senior Dev 2",
+                  children: []
+                },
+                {
+                  name: "Senior Dev 4",
+                  children: []
+                },
+                {
+                  name: "Middle Dev 5",
+                  children: []
+                },
+                {
+                  name: "Junior Dev 5",
+                  children: []
+                },
+              ]
+            },
+            {
+              name: "Team Lead 2",
+              children: [
+                {
+                  name: "Senior Dev 1",
+                  children: []
+                },
+                {
+                  name: "Senior Dev 2",
+                  children: []
+                },
+                {
+                  name: "Senior Dev 4",
+                  children: []
+                },
+                {
+                  name: "Middle Dev 5",
+                  children: []
+                },
+                {
+                  name: "Junior Dev 5",
+                  children: []
+                },
+              ]
+            }
+          ]
+        },
+        {
+          name: "Manager",
+          children: []
+        }
+      ]
+    };
+
+    buildHorizontalTree(treeData, "#tree");
+
+  </script>
+
+
+</body>
+
+</html>

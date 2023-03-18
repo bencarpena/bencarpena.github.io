@@ -24,7 +24,7 @@
      ]
     },
     {
-     "name": "Country!",
+     "name": "Country",
      "children": [
       {"name": "AspectRatioBanker", "size": 7074}
      ]

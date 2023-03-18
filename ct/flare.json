@@ -1,11 +1,11 @@
 {
- "name": "flare",
+ "name": "Wizards Universal Filter",
  "children": [
   {
-   "name": "analytics",
+   "name": "Location",
    "children": [
     {
-     "name": "cluster",
+     "name": "TRT",
      "children": [
       {"name": "AgglomerativeCluster", "size": 3938},
       {"name": "CommunityStructure", "size": 3812},
@@ -14,7 +14,7 @@
      ]
     },
     {
-     "name": "graph",
+     "name": "World Regions",
      "children": [
       {"name": "BetweennessCentrality", "size": 3534},
       {"name": "LinkDistance", "size": 5731},
@@ -24,15 +24,21 @@
      ]
     },
     {
-     "name": "optimization",
+     "name": "Country",
      "children": [
       {"name": "AspectRatioBanker", "size": 7074}
      ]
-    }
+    },
+    {
+        "name": "SSD Territory",
+        "children": [
+         {"name": "AspectRatioBanker", "size": 7074}
+        ]
+       }
    ]
   },
   {
-   "name": "animate",
+   "name": "People Leader",
    "children": [
     {"name": "Easing", "size": 17010},
     {"name": "FunctionSequence", "size": 5842},
@@ -62,7 +68,7 @@
    ]
   },
   {
-   "name": "data",
+   "name": "Cost Center",
    "children": [
     {
      "name": "converters",

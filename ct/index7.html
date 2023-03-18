@@ -23,8 +23,74 @@
 }
 
 </style>
-<body>
+<style>
+  .node {
+      font: 300 11px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      fill: #bbb;
+      
+  }
 
+  .node:hover {
+      fill: #000;
+  }
+
+  .link {
+      stroke: steelblue;
+      stroke-opacity: .4;
+      fill: none;
+      pointer-events: none;
+  }
+
+  .node:hover,
+  .node--source,
+  .node--target {
+      font-weight: 700;
+  }
+
+  .node--source {
+      fill: #2ca02c;
+  }
+
+  .node--target {
+      fill: #d62728;
+  }
+
+  .link--source,
+  .link--target {
+      stroke-opacity: 1;
+      stroke-width: 2px;
+  }
+
+  .link--source {
+      stroke: #d62728;
+  }
+
+  .link--target {
+      stroke: #2ca02c;
+  }
+  h2
+  {
+      font-family: Gotham, Arial, Helvetica, sans-serif;
+      color: #646664;
+      font-size: 20px;
+  }
+  h4
+  {
+      font-family: Gotham Light, Gotham, Helvetica, Arial, sans-serif;
+      color: #646664;
+      font-size: 12px;
+      padding-left: 20px;
+  }
+  h6
+  {
+      font-family: Gotham Light, Gotham, Helvetica, Arial, sans-serif;
+      color: #646664;
+      font-size: 12px;
+  }
+</style>
+<body>
+  <h2><div title="Data models are visual representations of an enterprise's data elements and the connections between them.">Data Model Sample</div></h2>
+  <h4>Version: 20170301.08</h4>
 <script src="https://d3js.org/d3.v3.min.js"></script>
 <script data-main="scripts/main" src="scripts/require.js"></script>
 

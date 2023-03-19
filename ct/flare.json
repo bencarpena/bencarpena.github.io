@@ -11,10 +11,7 @@
      "name": "World Regions"
     },
     {
-     "name": "Country",
-     "children": [
-      {"name": "AspectRatioBanker", "size": 7074}
-     ]
+     "name": "Country"
     },
     {
         "name": "SSD Territory"

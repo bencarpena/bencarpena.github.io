@@ -51,10 +51,12 @@
       ]
      },
      {
-      "name": "Cost Center",
+      "name": "Hardware and Embedded Systems",
       "children": [
-       {"name": "Cost Center Code", "size": 1759},
-       {"name": "Cost Center Name", "size": 2165}
+        {"name": "ASIC (App-Specific Integrated Circuit) Engineer", "size": 2165},
+        {"name": "FPGA (Field Programmable Gate Array) Engineer", "size": 2165},
+       {"name": "Firmware Engineer", "size": 2165},
+       {"name": "IoT Engineer", "size": 2165}
       ]
      },
      {

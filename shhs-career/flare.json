@@ -1,0 +1,72 @@
+{
+    "name": "CE and CS Career Paths",
+    "children": [
+     {
+      "name": "Academia and Research",
+      "children": [
+       {
+        "name": "PhD Researcher"
+       },
+       {
+        "name": "University Professor"
+       },
+       {
+        "name": "Research Scientist"
+       }
+      ]
+     },
+     {
+      "name": "Software Development",
+      "children": [
+       {
+        "name": "Web Development",
+        "children": [
+         {"name": "Frontend Developer", "size": 1983},
+         {"name": "Backend Developer", "size": 2047},
+         {"name": "Full Stack Developer", "size": 1375}
+        ]
+       },
+       {
+        "name": "Mobile Development",
+        "children": [
+         {"name": "iOS Developer", "size": 1983},
+         {"name": "Android Developer", "size": 2047}
+        ]
+       },
+       {
+        "name": "Game Development",
+        "children": [
+         {"name": "Gameplay Programmer", "size": 1983},
+         {"name": "Graphics Engineer", "size": 2047}
+        ]
+       },
+       {
+        "name": "DevOps and Site Reliability",
+        "children": [
+         {"name": "DevOps Engineer", "size": 1983},
+         {"name": "Platform Engineer", "size": 2047},
+         {"name": "Site Reliability Engineer", "size": 2043}
+        ]
+       }
+      ]
+     },
+     {
+      "name": "Cost Center",
+      "children": [
+       {"name": "Cost Center Code", "size": 1759},
+       {"name": "Cost Center Name", "size": 2165}
+      ]
+     },
+     {
+      "name": "Employee",
+      "children": [
+       {"name": "Employee Type", "size": 8833},
+       {"name": "Employee Status", "size": 1732}
+      ]
+     },
+     {
+      "name": "Business Unit"
+     }
+     
+    ]
+   }

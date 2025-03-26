@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS/CE Career Paths</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .tree-node {
+      margin-left: 20px;
+    }
+    .label {
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .label:hover {
+      text-decoration: underline;
+    }
+    .children {
+      margin-left: 20px;
+      border-left: 1px solid #ccc;
+      padding-left: 10px;
+      display: none;
+    }
+    .open > .children {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Career Paths for CS/CE Degrees</h1>
+  <div class="tree">
+    <div class="tree-node">
+      <div class="label" onclick="toggle(this)">▶ Software Development</div>
+      <div class="children">
+        <div class="tree-node">
+          <div class="label" onclick="toggle(this)">▶ Web Development</div>
+          <div class="children">
+            <div>Frontend Developer</div>
+            <div>Backend Developer</div>
+            <div>Full Stack Developer</div>
+          </div>
+        </div>
+        <div class="tree-node">
+          <div class="label" onclick="toggle(this)">▶ Mobile Development</div>
+          <div class="children">
+            <div>iOS Developer</div>
+            <div>Android Developer</div>
+          </div>
+        </div>
+        <div class="tree-node">
+          <div class="label" onclick="toggle(this)">▶ Game Development</div>
+          <div class="children">
+            <div>Gameplay Programmer</div>
+            <div>Graphics Engineer</div>
+          </div>
+        </div>
+        <div class="tree-node">
+          <div class="label" onclick="toggle(this)">▶ DevOps & Site Reliability</div>
+          <div class="children">
+            <div>DevOps Engineer</div>
+            <div>SRE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tree-node">
+      <div class="label" onclick="toggle(this)">▶ Hardware & Embedded Systems</div>
+      <div class="children">
+        <div>Embedded Software Engineer</div>
+        <div>FPGA/ASIC Designer</div>
+        <div>IoT Systems Engineer</div>
+      </div>
+    </div>
+
+    <div class="tree-node">
+      <div class="label" onclick="toggle(this)">▶ Data & AI</div>
+      <div class="children">
+        <div class="tree-node">
+          <div class="label" onclick="toggle(this)">▶ Data Science</div>
+          <div class="children">
+            <div>Data Analyst</div>
+            <div>Data Scientist</div>
+          </div>
+        </div>
+        <div class="tree-node">
+          <div class="label" onclick="toggle(this)">▶ Artificial Intelligence</div>
+          <div class="children">
+            <div>ML Engineer</div>
+            <div>AI Researcher</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tree-node">
+      <div class="label" onclick="toggle(this)">▶ Cybersecurity</div>
+      <div class="children">
+        <div>Security Analyst</div>
+        <div>Penetration Tester</div>
+        <div>Security Engineer</div>
+      </div>
+    </div>
+
+    <div class="tree-node">
+      <div class="label" onclick="toggle(this)">▶ Cloud & Infrastructure</div>
+      <div class="children">
+        <div>Cloud Engineer</div>
+        <div>Systems Administrator</div>
+        <div>Network Engineer</div>
+      </div>
+    </div>
+
+    <div class="tree-node">
+      <div class="label" onclick="toggle(this)">▶ Product & Management</div>
+      <div class="children">
+        <div>Technical Product Manager</div>
+        <div>Scrum Master</div>
+        <div>CTO (Chief Technology Officer)</div>
+      </div>
+    </div>
+
+    <div class="tree-node">
+      <div class="label" onclick="toggle(this)">▶ Academia & Research</div>
+      <div class="children">
+        <div>PhD Researcher</div>
+        <div>University Professor</div>
+        <div>Research Scientist</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggle(label) {
+      label.parentElement.classList.toggle("open");
+      const icon = label.textContent.trim().startsWith("▶") ? "▼" : "▶";
+      label.textContent = label.textContent.replace(/^[▶▼]/, icon);
+    }
+  </script>
+</body>
+</html>

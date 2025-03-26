@@ -66,6 +66,7 @@
           "name": "Artificial Intelligence",
           "children": [
            {"name": "Machine Learning (ML) Engineer", "size": 1980},
+           {"name": "AI Engineer", "size": 1980},
            {"name": "AI Researcher", "size": 1980}
           ]
          }

@@ -45,48 +45,59 @@
        {"name": "IoT Engineer", "size": 2165}
       ]
      },
-     {
+       {
         "name": "Data and AI",
         "children": [
             {
-                "name": "Data Engineer"
-            },
+                "name": "Data Engineering",
+                "children": [
+                 {"name": "Data Engineer", "size": 1980},
+                 {"name": "Data Architect", "size": 1980}
+                ]
+               },
          {
           "name": "Data Science",
           "children": [
-           {"name": "Data Analyst", "size": 1983},
-           {"name": "Data Scientist", "size": 2047}
+           {"name": "Data Analyst", "size": 1980},
+           {"name": "Data Scientist", "size": 1980}
           ]
          },
          {
           "name": "Artificial Intelligence",
           "children": [
-           {"name": "Machine Learning (ML) Engineer", "size": 1983},
-           {"name": "AI Researcher", "size": 2047}
+           {"name": "Machine Learning (ML) Engineer", "size": 1980},
+           {"name": "AI Researcher", "size": 1980}
           ]
          }
         ]
        },
        {
-        "name": "Data and AI",
+        "name": "Cybersecurity",
         "children": [
-            {
-                "name": "Data Engineer"
-            },
-         {
-          "name": "Data Science",
-          "children": [
-           {"name": "Data Analyst", "size": 1983},
-           {"name": "Data Scientist", "size": 2047}
-          ]
-         },
-         {
-          "name": "Artificial Intelligence",
-          "children": [
-           {"name": "Machine Learning (ML) Engineer", "size": 1983},
-           {"name": "AI Researcher", "size": 2047}
-          ]
-         }
+                    {"name": "Security Engineer", "size": 2165},
+                    {"name": "Penetration Tester", "size": 2165},
+                {"name": "Security Analyst", "size": 2165},
+                {"name": "Forensics Analyst", "size": 2165}
+        ]
+       },
+       {
+        "name": "Cloud and Infrastructure",
+        "children": [
+                    {"name": "Cloud Engineer", "size": 2165},
+                    {"name": "Systems Administrator", "size": 2165},
+                {"name": "Systems Architect", "size": 2165},
+                {"name": "Network Engineer", "size": 2165}
+        ]
+       },
+       {
+        "name": "Product and Management",
+        "children": [
+                    {"name": "Chief Technology Officer (CTO)", "size": 2165},
+                    {"name": "Chief Information Officer (CIO)", "size": 2165},
+                    {"name": "Chief Information Security Officer (CISO)", "size": 2165},
+                    {"name": "Product Manager", "size": 2165},
+                    {"name": "Project Manager", "size": 2165},
+                {"name": "Scrum Master", "size": 2165}
         ]
        },
      {

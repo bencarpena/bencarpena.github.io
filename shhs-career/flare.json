@@ -1,7 +1,6 @@
 {
     "name": "CE and CS Career Paths",
     "children": [
-     
      {
       "name": "Software Development",
       "children": [
@@ -47,6 +46,28 @@
       ]
      },
      {
+        "name": "Data and AI",
+        "children": [
+            {
+                "name": "Data Engineer"
+            },
+         {
+          "name": "Data Science",
+          "children": [
+           {"name": "Data Analyst", "size": 1983},
+           {"name": "Data Scientist", "size": 2047}
+          ]
+         },
+         {
+          "name": "Artificial Intelligence",
+          "children": [
+           {"name": "Machine Learning (ML) Engineer", "size": 1983},
+           {"name": "AI Researcher", "size": 2047}
+          ]
+         }
+        ]
+       },
+     {
         "name": "Academia and Research",
         "children": [
          {
@@ -59,17 +80,7 @@
           "name": "Research Scientist"
          }
         ]
-       },
-     {
-      "name": "Employee",
-      "children": [
-       {"name": "Employee Type", "size": 8833},
-       {"name": "Employee Status", "size": 1732}
-      ]
-     },
-     {
-      "name": "Business Unit"
-     }
+       }
      
     ]
    }

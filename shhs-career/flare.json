@@ -1,20 +1,7 @@
 {
     "name": "CE and CS Career Paths",
     "children": [
-     {
-      "name": "Academia and Research",
-      "children": [
-       {
-        "name": "PhD Researcher"
-       },
-       {
-        "name": "University Professor"
-       },
-       {
-        "name": "Research Scientist"
-       }
-      ]
-     },
+     
      {
       "name": "Software Development",
       "children": [
@@ -59,6 +46,20 @@
        {"name": "IoT Engineer", "size": 2165}
       ]
      },
+     {
+        "name": "Academia and Research",
+        "children": [
+         {
+          "name": "PhD Researcher"
+         },
+         {
+          "name": "University Professor"
+         },
+         {
+          "name": "Research Scientist"
+         }
+        ]
+       },
      {
       "name": "Employee",
       "children": [

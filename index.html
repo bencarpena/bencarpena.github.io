@@ -9,7 +9,7 @@
   <meta name="bc.description" content="volunteer computer science teacher, solution architect, data engineer, cloud engineer, software engineer, cybersecurity specialist, enterprise architect, web designer">
   <meta name="bc.keywords" content="empathy, innovate, innovator, engineer, volunteer computer science teacher, solution architect, data engineer, cloud engineer, software engineer, cybersecurity specialist, enterprise architect, web designer">
   <meta name="bc.language" content="en">
-  <meta name="bc.last_update_date" content="20250712">
+  <meta name="bc.last_update_date" content="20250325">
 
   <link rel="SHORTCUT ICON" href="https://bencarpena.github.io/httpdata/images/icon/brightoaks.ico">
   <link rel="stylesheet" href="httpdata2/things/baser.css" type="text/css">
@@ -19,6 +19,7 @@
   <script async src="httpdata2/things/ga.js"></script>
   <script src="httpdata2/things/goanalytics.js"></script>
 
+  <!-- Mobile-friendly responsive overrides -->
   <style>
     body {
       margin: 0;
@@ -67,35 +68,98 @@
       flex: 1 1 100%;
     }
 
-    .me-job {
-      text-align: left;
-      padding: 0.5rem 1rem;
-      max-width: 700px;
-      margin: 0 auto;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    .me-job ul {
-      list-style: none;
-      padding-left: 0;
-      margin: 0;
-    }
-
-    .me-job li {
-      margin-bottom: 0.5rem;
-    }
-
-    .me-why-how {
+    .me-job, .me-why-how {
       text-align: center;
-      padding: 1rem;
-      max-width: 700px;
-      margin: 0 auto;
+      padding: 0.5rem 0;
     }
 
     .footer {
       text-align: center;
       padding: 2rem 1rem;
-      background: transparent; /* removed gray */
+      background: #eee;
       font-size: 0.9rem;
     }
+
+    @media (min-width: 768px) {
+      .row.text-over-image .image, 
+      .row.text-over-image .text {
+        flex: 1 1 45%;
+      }
+
+      .nav {
+        justify-content: flex-end;
+      }
+
+      .nav li {
+        flex: 0 0 auto;
+      }
+    }
+  </style>
+
+  <script>
+    $(window).on("load", function () {
+      $("#page").fadeIn(903);
+      $("#nav").fadeIn(903);
+      $("#splash").fadeIn(903);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="page" style="display: block;">
+    <div class="inner">
+      <div class="mast">
+        <h1 id="logo">
+          <a href="https://bencarpena.github.io/?launch=grit8">
+            <img src="httpdata2/things/logo-bc.png" alt="Benjamin Carpena" />
+          </a>
+        </h1>
+
+        <ul class="nav" id="nav" style="display: block;">
+          <li><a href="https://github.com/bencarpena/shared" target="_blank"><i>My</i> Projects</a></li>
+          <li><a href="https://linkedin.com/in/benjamin-htx" target="_blank"><i>View My</i> LinkedIn</a></li>
+          <li><a href="https://twitter.com/bencarpena" target="_blank"><i>Randoms on</i> Twitter</a></li>
+          <li><a href="https://www.figma.com/slides/VrsXPJqUCkenH7pDQ5htgO/Engineering-First-Principles?node-id=1-62" target="_blank"><i>My Engineering</i> Principles</a></li>
+        </ul>
+      </div>
+
+      <div class="section intro" id="sec-intro">
+        <h1>empathize. innovate. <em>do.</em></h1>
+
+        <div id="card">
+          <div class="row text-over-image">
+            <div class="image" id="splash" style="display: block;">
+              <img src="httpdata2/things/splash.jpg" alt="splash" />
+            </div>
+            <div class="text">
+              <!-- Add content here if needed -->
+            </div>
+          </div>
+        </div>
+
+        <div class="me-job">
+          <p><br>/ Enterprise and Solution Architect <br>/ Data and Software Engineer <br>/ Cloud and Cybersecurity Engineer<br>/ Computer and IoT Engineer<br>/ Servant-Leader</p>
+        </div>
+
+        <div class="me-why-how">
+          <p><br>I am passionate about applying technology to advance meaningful and cutting-edge transformational changes that will help make our world a better place <abbr class="amp" title="And">&amp;</abbr> create a dent in the universe.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Thoughts, content, design, concepts &amp; ideas in this page are <a href="mailto:benjcarpena@gmail.com">mine</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/sw.js')
+        .then(function () {
+          console.log("Good! Service Worker Registered.");
+        });
+    }
+  </script>
+</body>
+</html>

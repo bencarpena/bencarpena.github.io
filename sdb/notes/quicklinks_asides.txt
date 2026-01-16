@@ -1,0 +1,14 @@
+  <DIV class=asides> 
+    <H2><SPAN>Quick</SPAN> <A 
+href="http://thebrightoaks.com/about/aside">Links</A></H2>
+    <OL>
+      <LI><A href="about/history/" rel=me>Parish</A> <EM>history</EM></LI>
+      <LI><A href="faith/" rel=me>Faith</A> <EM>formation</EM></LI>
+      <LI><A href="news/" rel=me>Pressroom</A> <EM>news</EM></LI>
+      <LI><A href="projects/" rel=me>On-going</A> <EM>projects</EM></LI>
+      <LI><A href="projects/" rel=me>Volunteers</A> </LI>
+      <LI><A href="http://twitter.com/sjp_parish" rel=me>Twitter</A> <EM>updates</EM></LI>
+      <LI><A href="http://flickr.com/" rel=me>Picture</A> <EM>gallery</EM></LI>
+      <LI><A href="http://flickr.com/" rel=me>Location</A> <EM>info</EM></LI>
+    </OL>
+  </DIV>
